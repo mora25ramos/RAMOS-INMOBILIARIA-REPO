@@ -26,7 +26,7 @@ body {
 } 
 
 .font-size { font-size: 0.65rem; }
-.text-center { text-align: center; }
+.text-center {text-align: center;}
 .bold { font-weight: bold;}
 .justify-content {justify-content: center;}
 .align.items {align-items: center;}
@@ -78,9 +78,10 @@ p { font-size: 0.65rem; }
     cursor: pointer;
 }
 
+
 .logo-nav-medidas {
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
 }  
 /*Fin Nav*/
 
@@ -90,31 +91,50 @@ p { font-size: 0.65rem; }
     grid-area: "main";
     padding-bottom: 50px;
  }
+
+ .contenedor-img {
+    height: auto;
+    width: auto;
+    overflow: auto;
+    margin-bottom: 20px; 
+ }
  
- #main #img img {
-     height: auto;
-     width: 100%;
-     overflow: auto;
-     margin-bottom: 20px;
+ .index-contenedor-img img {
+    height: 100%;
+    width: 100%;
  }
  
  /*section 1*/
- #titulo {
-    font-weight: bolder;
-    padding: 20px 0px;
-    color: black;
+ .index-contenedor-titulo {
+    width: auto;
+    height: auto;
+    margin: auto;
+    display: flex;
+    padding: 30px 0px;
     display: flex;
  }
- 
- /*section 2*/
- #buscador {
-     display: flex;
+
+ .flex-direction {
+    flex-direction: row;
  }
- 
- #buscadorDiv {
+
+
+ .linear-gradient {
+    background: linear-gradient(to bottom, #78281F, #922B21, rgb(138, 28, 39));
+ }
+
+ .index-contenedor-titulo h1{
+    padding: 15px 0px;
+    color: rgb(245, 245, 245);
+    width: 100%;
+ }
+
+ .index-contenedor-buscador {
+     display: flex;
      width: fit-content;
      height: fit-content;
-     background-color: rgb(218, 206, 206);
+     margin: auto;
+     background-color: rgb(245, 245, 245);
      padding: 5px;
      border-radius: 15px;
      box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
@@ -135,6 +155,14 @@ p { font-size: 0.65rem; }
      cursor: pointer;
  }
  
+ hr {
+    margin: auto;
+    background: black;
+    width: 100px;
+    height: 4px;
+    border-style: none;
+    margin-bottom: 15px;
+ }
  
  /*section 3*/
  .propiedades {
@@ -142,29 +170,38 @@ p { font-size: 0.65rem; }
      width: 12rem ;
  }
  
- .tituloInmueblesDestacados {
-    width: 100%;
-    padding-top: 40px;
-    padding-bottom: 25px;
-  }
- 
- #propsDestacadas {
-    display: flex;
- }
-
- .flex-flow-columns-nowrap {
-    flex-flow: column nowrap;
- }
- 
  .margin-bottom  {
     margin-bottom: 50px;
  }
  
- #destacados {
-    overflow: hidden;
-    padding: 30px opx;
-    margin-bottom: 15px;
+.index-contenedor-destacados {
+    margin: auto;
+    padding-top: 35px;
  }
+
+.index-contenedor-destacados h2{
+    width: 100%;
+    color: rgb(241, 236, 236);
+    padding-bottom: 40px;
+ }
+
+ .index-contenedor-cards{
+    display: flex;
+ }
+
+.cards {
+    margin: auto;
+ }
+
+ .col-12 {
+    flex: 0 0 auto;
+   width: 100%;
+ }
+
+.flex-direction-props {
+    flex-direction: column;
+ }
+
  /*FIN DEL INDEX*/
  
  
@@ -374,39 +411,51 @@ p { font-size: 0.65rem; }
 /* FIN TASACIONES*/
 
 /*FOOTER*/
+.hr-footer{
+    width: auto;
+    height: 2px;
+    margin: auto;
+    background-color: black;
+    border-style: none;
+}
+
 #pie {
     grid-area: "footer";
+    overflow: hidden;
     background-color: rgb(138, 28, 39);
-    width: auto;
-    height: auto;
-    overflow: auto;
-    font-weight: 400;
-    color: rgb(245, 245, 245);
 } 
 
-#pie #info{
-    background-color: rgb(115, 16, 26);
-}
-
-#pie #location {
-    padding-top: 5px;
-    margin-bottom: 1px;
-    text-align: center;
- }
-
- #pie #advertencia {
+.index-contenedor-footer {
     width: auto;
     height: auto;
-    overflow: auto;
-    color: rgb(184, 174, 174);
-    margin: 5px 7px;
-    font-size: 1rem;
+    background-color: rgb(115, 16, 26);
+    color: rgb(241, 236, 236);
 }
+
+.index-contenedor-footer-mapa {
+    width: auto;
+    height: auto;
+    margin-bottom: 1px;
+    text-align: center;
+    color: rgb(241, 236, 236);
+ }
 
 .mapa--ugarte {
     height: 12rem;
     width: 16rem ;
     justify-content: center;
+}
+
+.index-contenedor-footer-advertencia {
+    margin: auto;
+    width: 300px;
+    height: auto;
+}
+
+.index-contenedor-footer-advertencia p{
+    margin-top: 15px;
+    color: rgb(184, 174, 174);
+    font-size: 0.5rem;
 }
 /*FIN DEL FOOTER*/
 
@@ -504,6 +553,65 @@ p { font-size: 0.65rem; }
 
 }
 
+@media only screen and (min-width: 576px) {
+    /*GENERAL*/
+    .container { max-width: 700rem }
+    
+    h1 { font-size: 3rem; }
+    h2 { font-size: 2.5rem; }
+    h3 { font-size: 2rem; }
+    p { font-size: 1.7rem; }
+    .font-size { font-size: 1.8rem; }
+
+    .iconos {
+        height: 2.5rem;
+        width: 2.5rem ;
+        margin-right: 1px;
+    }
+    /*FIN GENERAL*/
+
+    /* HEADER*/
+    .iconosHeader {
+        width: 20px;
+        height: 18px;
+        margin-right: 4px;
+        margin-left: 4px;
+    }
+    /*FIN HEADER*/
+
+    /*NAV*/
+    #nav .logoNav {
+        width: 280px;
+        height: 280px;
+        padding: 15px;
+    }
+    /*FIN NAV*/
+
+    /*MAIN INDEX*/
+    .col-sm-6 {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+    /*FIN MAIN INDEX*/
+
+    .propiedades {
+        height: 18rem;
+        width: 22rem ;
+    }
+
+    .mapa--ugarte {
+        height: 30rem;
+        width: 34rem ;
+    }
+
+    #boton {
+        font-size: 1.3rem;
+        padding: 8px;
+        margin-top: 7px;
+        border-radius: 8px;
+        border: 1px solid;
+    }
+}
 
 @media only screen and (min-width: 768px) {
     
@@ -523,25 +631,24 @@ p { font-size: 0.65rem; }
     }
     /*FIN GENERAL*/
 
+    /* HEADER*/
     .iconosHeader {
         width: 30px;
         height: 28px;
         margin-right: 6px;
         margin-left: 6px;
     }
+    /*FIN HEADER*/
 
+    /*NAV*/
     #nav .logoNav {
         width: 300px;
         height: 300px;
         padding: 20px;
     }
-    
-    
-    nav ul li a {
-       font-size: 3rem;
-       margin-top: 14px;
-       margin-right: 20px;
-    }
+    /*FIN NAV*/
+
+
 
     .propiedades {
         height: 20rem;
@@ -581,10 +688,10 @@ p { font-size: 0.65rem; }
        grid-template-rows: 2vh 3vh 80vh 15vh;
     }
 
-    h1 { font-size: 3rem; }
-    h2 { font-size: 2.5rem; }
-    h3 { font-size: 1.4rem; }
-    p { font-size: 2.2rem; }
+    h1 { font-size: 2.5rem; }
+    h2 { font-size: 2rem; }
+    h3 { font-size: 1.5rem; }
+    p { font-size: 1.2rem; }
 
     .iconos {
         height: 2rem;
@@ -600,17 +707,26 @@ p { font-size: 0.65rem; }
         margin-left: 4px;
     }
 
+    #header {
+    position: sticky;
+    left: 0%;
+    top: 0%;
+    right: 0%;
+    } 
+
     #nav .logoNav {
         width: 250px;
         height: 250px;
         padding: 5px;
     }
     
-    
-    nav ul li a {
-       font-size: 2.3rem;
-       margin-top: 10px;
-       margin-right: 14px;
+    #titulo {
+        margin-top: 60px;
+        margin-bottom: 30px;
+    }
+
+    #buscador {
+        margin-bottom: 50px;
     }
 
     .propiedades {
@@ -643,6 +759,7 @@ p { font-size: 0.65rem; }
         box-sizing: border-box;
         
     } 
+
 
     body {
         overflow-x: hidden;
