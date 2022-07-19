@@ -50,7 +50,7 @@
         <!-- Inicia la Nav -->
         <nav class="navbar navbar-expand-lg bg-light justify-content align-items" id="nav">
             <div class="container-fluid">
-                 <a class="navbar-brand" href="index.html">
+                <a class="navbar-brand" href="index.html">
                     <img src= "img/Iconos/Logos UGARTE/logougarte.jpg" 
                         alt="Logo de la firma" 
                         class="logo-nav-medidas">
@@ -90,92 +90,104 @@
         <!-- Fin de la Nav -->
 
         <!-- Inicia MAIN -->
-        <main id="main">
-            <section id="img"> 
+        <main id="main" class="linear-gradient">
+            <section class="index-contenedor-img"> 
                 <div>
                     <img src="img/Fondos/fondopinterest.jpg" alt="fondo">
                 </div>
             </section>
+           
+            <div class="index-contenedor-titulo flex-direction justify-content align-items"> 
+                <hr>
+                <section>
+                    <div> 
+                        <h1 class="text-center"> SIEMPRE A SU SERVICIO </h1>
+                    </div>
+                </section>
+    
+    
+                <section class="index-contenedor-buscador">
+                    <div>
+                        <h3 class="text-center"> ENCUENTRE SU PROPIEDAD</h3>
+                        <form action="envio.php" class="flex-flow">
+                            <div> 
+                                <label for="operacion" > Tipo de operación </label>
+                                <input type="text" id="operacion" placeholder="Ej: Alquiler" class="font-size" >
+                            </div>
+                            
+                            <div>
+                                <label for="propiedad" > Tipo de propiedad </label>
+                                <input type="text" id="propiedad" placeholder="Ej: Departamento" class="font-size" >
+                            </div>
+                            
+                            <div>
+                                <label for="zona" > Buscar por zona </label>
+                                <input type="text" id="zona" placeholder="Ej: CABA" class="font-size">
+                            </div>
+                            
+                            <div class="text-center">
+                                <input type="submit" value="Buscar" id="boton" >
+                            </div>
+                        </form>
+                    </div>
+                </section>
+            </div>
+            <hr>
 
-            <section id="titulo" class="justify-content align-items">
-                <div> 
-                    <h1 class="text-center"> SIEMPRE A SU SERVICIO </h1>
-                </div>
-            </section>
-
-
-            <section id="buscador" class="justify-content">
-                <div id="buscadorDiv">
-                    <h3 bold> ENCUENTRE SU PROPIEDAD</h3>
-                    <form action="envio.php" class="flex-flow">
-                        <div> 
-                            <label for="operacion" > Tipo de operación </label>
-                            <input type="text" id="operacion" placeholder="Ej: Alquiler" class="font-size" >
-                        </div>
-                        
-                        <div>
-                            <label for="propiedad" > Tipo de propiedad </label>
-                            <input type="text" id="propiedad" placeholder="Ej: Departamento" class="font-size" >
-                        </div>
-                        
-                        <div>
-                            <label for="zona" > Buscar por zona </label>
-                            <input type="text" id="zona" placeholder="Ej: CABA" class="font-size">
-                        </div>
-                        
-                        <div class="text-center">
-                            <input type="submit" value="Buscar" id="boton" >
-                        </div>
-                    </form>
-                </div>
-            </section>
-
-
-            <section id="destacados" class="justify-content align-items" >
-                
-                <div class= "tituloInmueblesDestacados">
+            <section class="index-contenedor-destacados" >
+                <hr>
+                <div>
                     <h2 class="text-center"> Inmuebles destacados </h2>
                 </div>
 
-                <div id="propsDestacadas"> 
-                    <div class="flex-flow-columns-nowrap">
-                        <div class="card margin-bottom text-center" style="width: 18rem;">
-                            <img src="img/Propiedades/Venta/casa-loscastaños.jpg" class="card-img-top" alt="La imagen muestra un inmueble destacado">
-                            <div class="card-body">
-                            <h5 class="card-title"> B.C. Los Castaños </h5>
-                            <p class="card-text"> Hermosa casa en barrio cerrado</p>
-                            <p> U$D 390.000 </p>
-                            <a href="https://www.zonaprop.com.ar/propiedades/excelente-propiedad-los-castanos-48287642.html" class="btn btn-primary"> Más Info </a>
+                <div class="index-contenedor-cards"> 
+                    <div class="cards text-center">
+
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3" style="width: 16rem;">
+                            <div class="card margin-bottom" style="width: 16rem;" >
+                                <img src="img/Propiedades/Venta/casa-loscastaños.jpg" class="card-img-top" alt="La imagen muestra un inmueble destacado">
+                                <div class="card-body">
+                                    <h5 class="card-title"> B.C. Los Castaños </h5>
+                                    <p class="card-text"> Hermosa casa en barrio cerrado</p>
+                                    <p> U$D 390.000 </p>
+                                    <a href="https://www.zonaprop.com.ar/propiedades/excelente-propiedad-los-castanos-48287642.html" class="btn btn-primary"> Más Info </a>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="card margin-bottom text-center" style="width: 18rem;">
-                            <img src="img/Propiedades/Venta/quintamiret.jpg" class="card-img-top" alt="La imagen muestra un inmueble destacado">
-                            <div class="card-body">
-                            <h5 class="card-title"> Casa Quinta </h5>
-                            <p class="card-text"> Morón </p>
-                            <p> U$D 390.000 </p>
-                            <a href="https://www.zonaprop.com.ar/propiedades/excelente-propiedad-los-castanos-48287642.html" class="btn btn-primary"> Más Info </a>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+                            <div class="card margin-bottom" style="width: 16rem;">
+                                <img src="img/Propiedades/Venta/quintamiret.jpg" class="card-img-top" alt="La imagen muestra un inmueble destacado">
+                                <div class="card-body">
+                                    <h5 class="card-title"> Casa Quinta </h5>
+                                    <p class="card-text"> Morón </p>
+                                    <p> U$D 390.000 </p>
+                                    <a href="https://www.zonaprop.com.ar/propiedades/excelente-propiedad-los-castanos-48287642.html" class="btn btn-primary"> Más Info </a>
+                                </div>
                             </div>
                         </div>
-                        
-                        <div class="card margin-bottom text-center" style="width: 18rem;">
-                            <img src="img/Propiedades/Venta/casatalar.jpg" class="card-img-top" alt="La imagen muestra un inmueble destacado">
-                            <div class="card-body">
-                            <h5 class="card-title"> B.C. Talar del Lago </h5>
-                            <p class="card-text"> Hermosa casa en barrio cerrado</p>
-                            <p> U$D 990.000 </p>
-                            <a href="https://www.zonaprop.com.ar/propiedades/excelente-propiedad!-48378680.html" class="btn btn-primary"> Más Info </a>
+
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+                            <div class="card margin-bottom" style="width: 16rem;">
+                                <img src="img/Propiedades/Venta/casatalar.jpg" class="card-img-top" alt="La imagen muestra un inmueble destacado">
+                                <div class="card-body">
+                                    <h5 class="card-title"> B.C. Talar del Lago </h5>
+                                    <p class="card-text"> Hermosa casa en barrio cerrado</p>
+                                    <p> U$D 990.000 </p>
+                                    <a href="https://www.zonaprop.com.ar/propiedades/excelente-propiedad!-48378680.html" class="btn btn-primary"> Más Info </a>
+                                </div>
                             </div>
                         </div>
-                                
-                        <div class="card margin-bottom text-center" style="width: 18rem;">
-                            <img src="img/Propiedades/Venta/casahugo.jpg" class="card-img-top" alt="La imagen muestra un inmueble destacado">
-                            <div class="card-body">
-                            <h5 class="card-title">  </h5>
-                            <p class="card-text"> Florida, Vte López</p>
-                            <p> U$D 470.000 </p>
-                            <a href="https://www.zonaprop.com.ar/propiedades/excelente-casa-6-amb-florida-vte-lopez-49484327.htmll" class="btn btn-primary"> Más Info </a>
+                          
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+                            <div class="card margin-bottom" style="width: 16rem;">
+                                <img src="img/Propiedades/Venta/casahugo.jpg" class="card-img-top" alt="La imagen muestra un inmueble destacado">
+                                <div class="card-body">
+                                    <h5 class="card-title">  </h5>
+                                    <p class="card-text"> Florida, Vte López</p>
+                                    <p> U$D 470.000 </p>
+                                    <a href="https://www.zonaprop.com.ar/propiedades/excelente-casa-6-amb-florida-vte-lopez-49484327.htmll" class="btn btn-primary"> Más Info </a>
+                                </div>
                             </div>
                         </div>
                     </div> 
@@ -185,8 +197,9 @@
         <!-- Cierra MAIN-->
 
         <!-- Inicia FOOTER-->
-        <footer id="pie" class="container"> 
-            <section id="info">
+        <hr class="hr-footer">
+        <footer id="pie"> 
+            <section class="index-contenedor-footer">
                 <ul> 
                     <div>
                         <li> 
@@ -202,7 +215,7 @@
                 </ul>
             </section>
     
-            <section id="location">
+            <section class="index-contenedor-footer-mapa">
                 <div> 
                     <p class="text-center"> Gdor. Marcelino Ugarte 1582, 4B, Olivos </p>         
                         <img src="img/Mapa/mapaugarte.jpg" 
@@ -211,7 +224,7 @@
                 </div>
             </section>
 
-            <section id="advertencia">
+            <section class="index-contenedor-footer-advertencia">
                 <p> Todas las medidas enunciadas son meramente orientativas, las medidas exactas serán las que se expresen en el respectivo título de propiedad de cada inmueble. Todas las fotos, imagenes y videos son meramente ilustrativos y no contractuales. Los precios enunciados son meramente orientativos y no contractuales.. </p>
             </section>
         </footer>
