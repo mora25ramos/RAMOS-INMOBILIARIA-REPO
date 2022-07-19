@@ -151,6 +151,10 @@ p { font-size: 0.65rem; }
  #propsDestacadas {
     display: flex;
  }
+
+ .flex-flow-columns-nowrap {
+    flex-flow: column nowrap;
+ }
  
  .margin-bottom  {
     margin-bottom: 50px;
@@ -509,15 +513,15 @@ p { font-size: 0.65rem; }
     h1 { font-size: 4rem; }
     h2 { font-size: 3.5rem; }
     h3 { font-size: 2rem; }
-    p { font-size: 1.8rem; }
+    p { font-size: 1.7rem; }
+    .font-size { font-size: 1.8rem; }
 
     .iconos {
         height: 2.8rem;
         width: 2.8rem ;
         margin-right: 1px;
     }
-    
-    .font-size { font-size: 1.8rem; }
+    /*FIN GENERAL*/
 
     .iconosHeader {
         width: 30px;
