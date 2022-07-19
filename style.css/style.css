@@ -173,6 +173,10 @@ p { font-size: 0.65rem; }
  .margin-bottom  {
     margin-bottom: 50px;
  }
+
+ #cards {
+    margin: 30px 35px;
+ }
  
 .index-contenedor-destacados {
     margin: auto;
@@ -183,23 +187,6 @@ p { font-size: 0.65rem; }
     width: 100%;
     color: rgb(241, 236, 236);
     padding-bottom: 40px;
- }
-
- .index-contenedor-cards{
-    display: flex;
- }
-
-.cards {
-    margin: auto;
- }
-
- .col-12 {
-    flex: 0 0 auto;
-   width: 100%;
- }
-
-.flex-direction-props {
-    flex-direction: column;
  }
 
  /*FIN DEL INDEX*/
@@ -491,8 +478,8 @@ p { font-size: 0.65rem; }
 
     /* PAG PROPS ALQ Y VENTAS*/
     .propiedades {
-        height: 20rem;
-        width: 24rem ;
+        height: 12rem;
+        width: 14rem ;
     }
     /* FIN PAG PROPS ALQ Y VENTAS */
 
@@ -544,6 +531,13 @@ p { font-size: 0.65rem; }
     }
     /*FIN NAV*/
 
+    /*index main section 3*/
+    .propiedades {
+        height: 12rem;
+        width: 14rem ;
+    }
+    /*fin index main*/
+
     /*FOOTER*/
     .mapa--ugarte {
         height: 18rem;
@@ -587,16 +581,10 @@ p { font-size: 0.65rem; }
     }
     /*FIN NAV*/
 
-    /*MAIN INDEX*/
-    .col-sm-6 {
-        flex: 0 0 auto;
-        width: 50%;
-    }
-    /*FIN MAIN INDEX*/
 
     .propiedades {
         height: 18rem;
-        width: 22rem ;
+        width: 20rem ;
     }
 
     .mapa--ugarte {
@@ -649,10 +637,9 @@ p { font-size: 0.65rem; }
     /*FIN NAV*/
 
 
-
     .propiedades {
-        height: 20rem;
-        width: 24rem ;
+        height: 18rem;
+        width: 20rem ;
     }
 
     .mapa--ugarte {
@@ -676,8 +663,9 @@ p { font-size: 0.65rem; }
      }
  
      .propiedades {
-         height: 25rem;
-         width: 32rem ;
+         height: 22rem;
+         width: 20rem ;
+         margin-top: 20px;
      }
 
 }
@@ -730,8 +718,8 @@ p { font-size: 0.65rem; }
     }
 
     .propiedades {
-        height: 15rem;
-        width: 19rem ;
+        height: 14rem;
+        width: 12rem ;
     }
 
     .mapa--ugarte {
@@ -840,8 +828,8 @@ p { font-size: 0.65rem; }
     }
 
     .propiedades {
-        height: 15rem;
-        width: 19rem ;
+        height: 14rem;
+        width: 14rem ;
     }
 
     .mapa--ugarte {
