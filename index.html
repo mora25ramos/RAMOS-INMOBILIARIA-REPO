@@ -19,7 +19,7 @@
     <body>
 
         <!-- Inicia el Header-->
-        <header id="header" class="justify-content">
+        <header id="header" class="justify-content sticky-top">
             <div id="headerDiv"> 
                 <ul> 
                     <li class="padding-li-header"> 
@@ -63,7 +63,7 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link" href="pages/tasaciones.html">TASACIONES</a>
+                    <a class="nav-link" href="pages/tasacion.html">TASACIONES</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="pages/contacto.html">CONTACTO</a>
@@ -82,7 +82,7 @@
                 </ul>
                 <form class="d-flex" role="search">
                   <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
+                  <button class="btn btn-outline-success" type="submit">Buscar</button>
                 </form>
               </div>
             </div>
@@ -90,7 +90,7 @@
         <!-- Fin de la Nav -->
 
         <!-- Inicia MAIN -->
-        <main id="main" class="linear-gradient">
+        <main id="main">
             <section class="index-contenedor-img"> 
                 <div>
                     <img src="img/Fondos/fondopinterest.jpg" alt="fondo">
@@ -109,29 +109,96 @@
                 <section class="index-contenedor-buscador">
                     <div>
                         <h3 class="text-center"> ENCUENTRE SU PROPIEDAD</h3>
-                        <form action="envio.php" class="flex-flow">
-                            <div> 
-                                <label for="operacion" > Tipo de operación </label>
-                                <input type="text" id="operacion" placeholder="Ej: Alquiler" class="font-size" >
-                            </div>
-                            
-                            <div>
-                                <label for="propiedad" > Tipo de propiedad </label>
-                                <input type="text" id="propiedad" placeholder="Ej: Departamento" class="font-size" >
-                            </div>
-                            
-                            <div>
-                                <label for="zona" > Buscar por zona </label>
-                                <input type="text" id="zona" placeholder="Ej: CABA" class="font-size">
-                            </div>
-                            
-                            <div class="text-center">
-                                <input type="submit" value="Buscar" id="boton" >
-                            </div>
-                        </form>
+                        <!-- form Bootstrap-->
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Tipo de operacion</option>
+                            <option value="1">Venta</option>
+                            <option value="2">Alquiler</option>
+                            <option value="3">Alquiler temporario</option>
+                        </select>
+
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Tipo de propiedad</option>
+                            <option value="1">Terreno</option>
+                            <option value="2">Departamento</option>
+                            <option value="3">Casa</option>
+                            <option value="4">Oficina</option>
+                            <option value="5">Locales</option>
+                            <option value="6">Edificio</option>
+                            <option value="7">PH</option>
+                        </select>
+
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Zona</option>
+                            <option value="1">CABA</option>
+                            <option value="2">GBA</option>
+                            <option value="3">Otros</option>
+                        </select>
+
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Barrio</option>
+                            <option value="1">Almagro</option>
+                            <option value="2">Balvanera</option>
+                            <option value="3">Barrio Norte</option>
+                            <option value="4">Belgrano</option>
+                            <option value="5">Boedo</option>
+                            <option value="6">Caballito</option>
+                            <option value="7">Centro</option>
+                            <option value="8">Cañitas</option>
+                            <option value="9">Congreso</option>
+                            <option value="10">Flores</option>
+                            <option value="11">Microcentro</option>
+                            <option value="12">Monserrat</option>
+                            <option value="13">Nuñez</option>
+                            <option value="14">P. Rivadavia</option>
+                            <option value="15">Palermo</option>
+                            <option value="16">Palermo Chico</option>
+                            <option value="17">Palermo Hollywood</option>
+                            <option value="18">Palermo Nuevo</option>
+                            <option value="19">Plaza S. Martin</option>
+                            <option value="20">Puerto Madero</option>
+                            <option value="21">Recoleta</option>
+                            <option value="22">Retiro</option>
+                            <option value="23">Saavedra</option>
+                            <option value="24">San Telmo</option>
+                            <option value="25">Tribunales</option>
+                            <option value="26">Villa Crespo</option>
+                            <option value="27">Villa Urquiza</option>
+                            <option value="28">Acassuso</option>
+                            <option value="29">Beccar</option>
+                            <option value="30">Carapacchay</option>
+                            <option value="31">Escobar</option>
+                            <option value="32">Florida</option>
+                            <option value="33">General Pacheco</option>
+                            <option value="34">La Lucila</option>
+                            <option value="35">Las Lomas</option>
+                            <option value="36">La Horqueta</option>
+                            <option value="37">Martinez</option>
+                            <option value="38">Munro</option>
+                            <option value="39">Olivos</option>
+                            <option value="40">Pilar</option>
+                            <option value="41">San Isidro</option>
+                            <option value="42">San Fernando</option>
+                            <option value="43">Tigre</option>
+                            <option value="44">Vte Lopez</option>
+                        </select>
+
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Ambientes</option>
+                            <option value="1">1 Ambiente</option>
+                            <option value="2">2 Ambientes</option>
+                            <option value="3">3 Ambientes</option>
+                            <option value="4">4 Ambiente</option>
+                            <option value="5">+5 Ambientes</option>
+                        </select>
+
+                        <div class="text-center">
+                            <input type="submit" value="Buscar" id="boton" >
+                        </div>
+                         <!-- fin del form-->
                     </div>
                 </section>
-            </div>
+            </div>         
             <hr>
 
             <section class="index-contenedor-destacados" >
