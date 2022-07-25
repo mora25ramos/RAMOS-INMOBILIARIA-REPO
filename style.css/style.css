@@ -4,11 +4,11 @@ html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
 } 
 
 body {
     overflow-x: hidden;
+    background: linear-gradient(to bottom, rgb(250, 248, 246), rgb(240, 238, 238), rgb(235, 231, 231));
 } 
 
 .container {
@@ -32,12 +32,13 @@ body {
 .align.items {align-items: center;}
 .flex-flow-row-nowrap { flex-flow: row nowrap;} 
 .flex-flow-row-wrap { flex-flow: row wrap;}
+.pointer {cursor: pointer;}
 
 ul { list-style: none; }
 li { display: inline-block; }
-h1 { font-size: 1.2rem; }
-h2 { font-size: 1rem; }
-h3 { font-size: 0.9rem; }
+h1 { font-size: 1.6rem; }
+h2 { font-size: 1.2rem; }
+h3 { font-size: 1rem; }
 p { font-size: 0.7rem; }
 /*Fin General*/
 
@@ -55,9 +56,7 @@ p { font-size: 0.7rem; }
     flex-flow: row wrap;
 } 
 
-#headerDiv li {
-    padding-right: 5px;
-}
+#headerDiv li { padding-right: 5px;}
 
 .iconosHeader {
     width: 14px;
@@ -69,13 +68,10 @@ p { font-size: 0.7rem; }
 /* NAV */
 #nav {
     margin: 40px;
-    
     grid-area: "nav" ;
 }
 
-#nav:hover {
-    cursor: pointer;
-}
+#nav:hover { cursor: pointer;}
 
 
 .logo-nav-medidas {
@@ -84,23 +80,21 @@ p { font-size: 0.7rem; }
 }  
 /*Fin Nav*/
 
-/*MAIN INDEX*/
-
+/*MAIN del INDEX*/
 #main {
     grid-area: "main";
     padding-bottom: 50px;
  }
 
- .contenedor-img {
-    height: auto;
-    width: auto;
-    overflow: auto;
-    margin-bottom: 20px; 
+ .index-contenedor-img {
+    height: 0px;
+    width: 0px;
+    cursor: pointer;
  }
  
  .index-contenedor-img img {
-    height: 100%;
-    width: 100%;
+    height: 0%;
+    width: 0%;
  }
  
  /*section 1*/
@@ -108,45 +102,28 @@ p { font-size: 0.7rem; }
     width: auto;
     height: auto;
     margin: auto;
-    display: flex;
-    padding: 30px 0px;
+    padding-top: 10px;
+    padding-bottom: 35px;
  }
 
- .flex-direction {
-    flex-direction: row;
+ .flex-direction { flex-direction: row; }
+
+ .index-contenedor-titulo h2{
+    font-weight: 700;
+    padding-bottom: 20px;
+    margin: 0px 70px;
  }
 
-
- .index-contenedor-titulo h1{
-    padding: 15px 0px;
-    width: 100%;
- }
-
- .index-contenedor-buscador {
-     display: flex;
-     width: fit-content;
-     height: fit-content;
-     margin: auto;
-     background-color: rgb(245, 245, 245);
-     padding: 5px;
-     border-radius: 15px;
-     box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+ .index-contenedor-destacados h1{
+    font-weight: 700;
+    padding-bottom: 10px;
+    margin: 0px 25px;
  }
  
- #boton {
-     font-size: 0.7rem;
-     font-weight: bold;
-     padding: 5px;
-     margin-top: 5px;
-     border-radius: 8px;
-     border: 0.5px solid;
-     box-shadow: 1px 1px 1px rgba(0,0,0,0.5);
- }
- 
- #boton:hover {
-     background-color: beige;
-     cursor: pointer;
- }
+.btn-color {
+    background-color: rgb(233, 227, 227);
+    border: solid 2px rgb(218, 206, 206);
+}
  
  hr {
     margin: auto;
@@ -163,13 +140,10 @@ p { font-size: 0.7rem; }
      width: 12rem ;
  }
  
- .margin-bottom  {
-    margin-bottom: 50px;
- }
-
- #cards {
-    margin: 30px 35px;
- }
+ #cards { margin: 30px 35px;}
+ .margin-bottom  { margin-bottom: 50px;}
+ .margin-card { margin-top: 15px;}
+ .whole-card { margin-bottom: 20px;}
  
 .index-contenedor-destacados {
     margin: auto;
@@ -180,7 +154,6 @@ p { font-size: 0.7rem; }
     width: 100%;
     padding-bottom: 10px;
  }
-
  /*FIN DEL INDEX*/
  
  
@@ -241,39 +214,20 @@ p { font-size: 0.7rem; }
    }
  
  
- #props  {
-    grid-area: "props";
-   }
+ #props  {grid-area: "props";}
  
- #filtros .container {
-     display: flex;
-   }
-   
+ #filtros .container {display: flex;}
  
- .flex-flow {
-     flex-flow: column nowrap;
-   }
- 
- 
- .flex-direction {
-     flex-direction: column;
-   }
- 
- 
- .flex-wrap {
-     flex-wrap: nowrap;
-   }
- 
+ .flex-flow { flex-flow: column nowrap;}
+ .flex-direction-column {flex-direction: column;}
+ .flex-wrap {flex-wrap: nowrap; }
  
  #filtros .asideDiv {
      margin-bottom: 15px;
      margin-top: 25px;
    }
-   
  
- #mainProps  {
-   display: flex;
- }
+ #mainProps  {display: flex;}
  
  #propiedadesBody  {
      background-repeat: no-repeat;
@@ -295,77 +249,71 @@ p { font-size: 0.7rem; }
  
  /*Página Contacto*/
  .contenedorContacto {
-     display: grid ;
-     grid-template-columns: 1fr;
-     grid-template-rows: auto;
-     grid-template-areas: 
-     "contacto"
-     "mapa";
+    display: grid ;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "contacto"
+    "mapa";
  } 
  
  #fondo {
- background-repeat: no-repeat;
- background-position: fixed;
- background-size: cover;
- background-image: url(../img/Fondos/fondoblurry.jpg);
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-size: cover;
+    background-image: url(../img/Fondos/fondoblurry.jpg);
  }
  
  #mapa {
-     grid-area: "mapa";
-     margin-right: 30px;
-     margin-left: 30px;
-     padding-right: 10px;
-     padding-left: 10px;
-     padding-bottom: 45px;
+    grid-area: "mapa";
+    margin-right: 30px;
+    margin-left: 30px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 45px;
  }
  
  
  #contacto-aside {
-     grid-area: "contacto";
-     padding: 45px;
+    grid-area: "contacto";
+    padding: 45px;
  }
  
- #aside-contacto-bg {
-     background: linear-gradient(to bottom, whitesmoke, beige);
- }
+ #aside-contacto-bg {background: linear-gradient(to bottom, whitesmoke, beige);}
  
  #mainContacto {
-     grid-area: "mapa";
-     padding-bottom: 40px;
-     padding-top: 15px;
+    grid-area: "mapa";
+    padding-bottom: 40px;
+    padding-top: 15px;
  }
  
- .titulosMain {
-     background-color: rgba(230, 217, 217, 0.863);
- }
+ .titulosMain {background-color: rgba(230, 217, 217, 0.863); }
  
- .pMain {
-     margin-top: 12px;
- }
+ .pMain {margin-top: 12px;}
  
- #sectionInfo { 
-     padding-bottom: 30px; 
- }
+ #sectionInfo {  padding-bottom: 30px; }
  
- .line-height {
-     line-height: 10px;
- }
+ .line-height {line-height: 10px;}
  
  .formConsulta { 
-     font-size: 1.2rem; 
-     padding-bottom: 6px;
+    font-size: 1.2rem; 
+    padding-bottom: 6px;
  }
  /*FIN PAG CONTACTO*/
   
  /*Pàg Tasaciones*/
-.contenedor-tasaciones-intro {
-    margin: 15px;
+.icono-tasaciones {
+    width: auto;
+    height: 65px;
+    margin-top: 15px;
  }
 
- .hr-tasaciones{
+.contenedor-tasaciones-intro { margin: 25px;}
+
+.hr-tasaciones{
     width: 90%;
     height: 1px;
- }
+}
 
 .contenedor-form-tasaciones {
     margin-bottom: 45px;
@@ -375,42 +323,30 @@ p { font-size: 0.7rem; }
     color: #999897;
 }
 
-.contenedor-form-tasaciones button{
-   font-weight: 500;
-}
+.contenedor-form-tasaciones button{font-weight: 500;}
 
-.btn-bg {
-    background-color: #ede6dd;
-}
+.btn-bg {background-color: #ede6dd;}
 
- .margin-top {
-     margin-top: 20px;
- }
+.margin-top {margin-top: 20px;}
  
  #tasaciones {
-     display: flex;
-     padding-top: 40px;
+    display: flex;
+    padding-top: 40px;
  }
  
- #tasaciones p {
-     padding-bottom: 5px;
- }
+ #tasaciones p {padding-bottom: 5px;}
  
  #form-tasacion {
-     background-color: rgb(228, 216, 216);
-     margin-bottom: 50px;
-     padding: 25px;
-     border-radius: 15px;
+    background-color: rgb(228, 216, 216);
+    margin-bottom: 50px;
+    padding: 25px;
+    border-radius: 15px;
  
- }
- 
- .flex-directionT {
-    flex-direction: row;
  }
  
  #button {
-     margin: 10px;
-     font-size: 1.5rem;
+    margin: 10px;
+    font-size: 1.5rem;
   }
 /* FIN TASACIONES*/
 
@@ -452,7 +388,7 @@ p { font-size: 0.7rem; }
 
 .index-contenedor-footer-advertencia {
     margin: auto;
-    width: 300px;
+    width: auto;
     height: auto;
 }
 
@@ -463,25 +399,23 @@ p { font-size: 0.7rem; }
 }
 /*FIN DEL FOOTER*/
 
+
+
+
 @media only screen and (min-width: 350px) {
 
     /* GENERAL */
-    .container {
-        max-width: 450vw;
-    }
+    .container {max-width: 450px;}
 
     h1 { font-size: 1.5rem; }
     h2 { font-size: 1.3rem; }
     h3 { font-size: 1.1rem; }
     p { font-size: 0.7rem; }
-    
-    .font-size { font-size: 0.8rem; }
+    .font-size { font-size: 0.6rem; }
     /*Fin General*/
 
     /* HEADER */
-    #headerDiv li {
-        padding-right: 2px;
-    }
+    #headerDiv li {padding-right: 2px;}
 
     .iconosHeader {
         width: 15px;
@@ -491,10 +425,25 @@ p { font-size: 0.7rem; }
 
     /* NAV */
    .logo-nav-medidas {
-        width: 160px;
-        height: 160px;
+        width: 150px;
+        height: 150px;
     }
     /* FIN NAV*/
+
+    /*MAIN DEL INDEX*/
+    .index-contenedor-destacados h1{
+        font-weight: 700;
+        padding-bottom: 10px;
+        margin: 0px 45px;
+     }
+
+    #boton {
+        font-size: 0.5rem;
+        padding: 2px;
+        margin-top: 2px;
+        border-radius: 5px;
+    }
+     /*FIN MAIN DEL INDEX*/
 
     /* PAG PROPS ALQ Y VENTAS*/
     .propiedades {
@@ -508,24 +457,23 @@ p { font-size: 0.7rem; }
         height: 18rem;
         width: 20rem ;
     }
-
-    #boton {
-        font-size: 1.4rem;
-        padding: 10px;
-        margin-top: 10px;
-        border-radius: 8px;
-        border: 1px solid;
-    }
     /*FIN PAG CONSULTAS*/
+
+    /*Pàg Tasaciones*/
+    .contenedor-tasaciones-intro {
+        margin: 35px;
+    }
+
+    .icono-tasaciones {height: 70px; }
+    /*Fin pág Tasaciones*/
 }
+
 
 
 @media only screen and (min-width: 390px) {
 
    /* GENERAL */
-   .container {
-    max-width: 550vw;
-    }
+   .container {max-width: 550px;}
 
     h1 { font-size: 2rem; }
     h2 { font-size: 1.8rem; }
@@ -536,10 +484,6 @@ p { font-size: 0.7rem; }
     /*FIN GENERAL*/
 
     /*HEADER*/
-    #headerDiv li {
-        padding-right: 2px;
-    }
-
     .iconosHeader {
         width: 10px;
         height: 8px;
@@ -558,6 +502,14 @@ p { font-size: 0.7rem; }
         height: 12rem;
         width: 14rem ;
     }
+
+    #boton {
+        font-size: 0.8rem;
+        font-weight: 600;
+        padding: 3px;
+        margin-top: 5px;
+        border-radius: 5px;
+    }
     /*fin index main*/
 
     /*FOOTER*/
@@ -567,11 +519,16 @@ p { font-size: 0.7rem; }
     }
     /*FIN FOOTER*/
 
+    /*Pàg Tasaciones*/
+    .contenedor-tasaciones-intro {margin: 45px;}
+
+    .icono-tasaciones {height: 75px; }
+    /*Fin pág Tasaciones*/
 }
 
 @media only screen and (min-width: 576px) {
     /*GENERAL*/
-    .container { max-width: 700rem }
+    .container { max-width: 700px}
     
     h1 { font-size: 3rem; }
     h2 { font-size: 2.5rem; }
@@ -616,20 +573,12 @@ p { font-size: 0.7rem; }
         height: 30rem;
         width: 34rem ;
     }
-
-    #boton {
-        font-size: 1.3rem;
-        padding: 8px;
-        margin-top: 7px;
-        border-radius: 8px;
-        border: 1px solid;
-    }
 }
 
 @media only screen and (min-width: 768px) {
     
     /*GENERAL*/
-    .container { max-width: 900rem }
+    .container { max-width: 900px}
     
     h1 { font-size: 2.5rem; }
     h2 { font-size: 2rem; }
@@ -658,33 +607,89 @@ p { font-size: 0.7rem; }
 
     /*NAV*/
     #nav .logoNav {
-        width: 300px;
-        height: 300px;
+        width: 400px;
+        height: 400px;
         padding: 20px;
     }
     /*FIN NAV*/
 
+    /*MAIN INDEX*/
+    .index-contenedor-img {
+        height: 620px;
+        width: auto;
+        overflow: auto;
+        margin-bottom: 20px; 
+    }
+     
+    .index-contenedor-img img {
+        height: 100%;
+        width: 100%;
+    }
 
-    .propiedades {
+    hr {
+        margin: auto;
+        background: black;
+        width: 500px;
+        height: 3px;
+        border-style: none;
+        margin-bottom: 15px;
+     }
+
+     .propiedades {
         height: 18rem;
         width: 20rem ;
     }
+    /*FIN DEL MAIN DEL INDEX*/
 
+    /*FOOTER*/
     .mapa--ugarte {
         height: 36rem;
         width: 40rem ;
     }
+    /*FIN FOOTER*/
 
-    #boton {
-        font-size: 2rem;
-        padding: 10px;
-        margin-top: 10px;
-        border-radius: 8px;
-        border: 1px solid;
+    /*PÁG TASACIONES*/
+    .contenedor-form-tasaciones {
+        margin-bottom: 50px;
+        margin-right: 75px;
+        margin-left: 75px;
+        padding: 15px;
     }
+
+     .contenedor-tasaciones-intro { margin: 55px;}
+
+     .icono-tasaciones {height: 85px; }
+    /*FIN PÁG TASACIONES*/    
 }
 
 @media only screen and (min-width: 900px) {
+
+    /*GENERAL*/
+    .container { max-width: 1000px}
+    /*FIN GENERAL*/
+
+    /*NAV*/
+    #nav .logoNav {
+        width: 500px;
+        height: 500px;
+        padding: 20px;
+    }
+    /*FIN NAV*/
+
+    /*MAIN INDEX*/
+    .index-contenedor-img {
+        height: 720px;
+        width: auto;
+        overflow: auto;
+        margin-bottom: 20px; 
+    }
+     
+    .index-contenedor-img img {
+        height: 100%;
+        width: 100%;
+    }
+    /*FIN DEL MAIN DEL INDEX*/
+
      .propiedades {
          height: 22rem;
          width: 20rem ;
@@ -695,6 +700,19 @@ p { font-size: 0.7rem; }
         padding-right: 6px;
         padding-left: 5px;
     }
+
+    /*PÁG TASACIONES*/
+    .contenedor-form-tasaciones {
+        margin-bottom: 50px;
+        margin-right: 75px;
+        margin-left: 75px;
+        padding: 15px;
+    }
+
+     .contenedor-tasaciones-intro {margin: 55px; }
+     
+     .icono-tasaciones {height: 90px; }
+    /*FIN PÁG TASACIONES*/   
 
 }
 
@@ -735,6 +753,29 @@ p { font-size: 0.7rem; }
         padding: 5px;
     }
     
+
+    /*MAIN INDEX*/
+    .index-contenedor-titulo {
+        display: flex;
+     }
+
+    .index-contenedor-img {
+        height: 600px;
+        width: auto;
+        overflow: auto;
+        margin-bottom: 30px; 
+     }
+     
+     .index-contenedor-img img {
+        height: 100%;
+        width: 100%;
+    }
+
+    #buscador-propiedades-index {
+        margin: 5px 80px;
+    }
+    /*FIN DEL MAIN INDEX*/
+
     #titulo {
         margin-top: 60px;
         margin-bottom: 30px;
@@ -761,27 +802,35 @@ p { font-size: 0.7rem; }
         border-radius: 3.5px;
         border: 0.6px solid;
     }
+
+    /*PÁG TASACIONES*/
+    .contenedor-form-tasaciones {
+        margin-bottom: 70px;
+        margin-right: 150px;
+        margin-left: 150px;
+    }
+
+    .contenedor-tasaciones-intro { margin: 65px; }
+    .contenedor-tasaciones-contacto {display: flex;}
+    /*FIN PÁG TASACIONES*/  
 }
 
 
 @media only screen and (min-width: 1200px) {
 
     /* GENERAL */
-    .container {
-        max-width: 1400vw;
-    } 
+    .container {max-width: 1400vw;} 
 
     .iconos {
         height: 2rem;
         width: 2rem ;
     }
 
-    .font-size { font-size: 1.2rem; }
-
+    .font-size { font-size: 1.3rem; }
     h1 { font-size: 3rem; }
     h2 { font-size: 2.5rem; }
     h3 { font-size: 2rem; }
-    p { font-size: 1.2rem; }
+    p { font-size: 1.4rem; }
     /*Fin General*/
   
 
@@ -819,6 +868,28 @@ p { font-size: 0.7rem; }
         height: 150px;
     }  
     /*Fin Nav*/
+
+    /*MAIN INDEX*/
+    .index-contenedor-img {
+        height: 820px;
+        width: auto;
+        overflow: auto;
+        margin-bottom: 20px;
+    }
+     
+    .index-contenedor-img img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .index-contenedor-titulo {
+       margin-top: 45px;
+    }
+
+    .index-contenedor-destacados {
+        margin-top: 55px;
+    }
+    /*FIN DEL MAIN INDEX*/
   
 
     /*PAG PROPS*/
