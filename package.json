@@ -1,0 +1,25 @@
+{
+  "name": "coder-house",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1", 
+    "sass": "sass",
+    "sass:watch": "sass --watch scss/main.scss style.css/main.css"
+  },
+
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mora25ramos/RAMOS-INMOBILIARIA-REPO.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mora25ramos/RAMOS-INMOBILIARIA-REPO/issues"
+  },
+  "homepage": "https://github.com/mora25ramos/RAMOS-INMOBILIARIA-REPO#readme",
+  "dependencies": {
+    "sass": "^1.54.0"
+  }
+}
