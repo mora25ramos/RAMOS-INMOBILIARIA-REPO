@@ -1,0 +1,123 @@
+//general
+h1,
+h2,
+h3,
+p {
+    font-family: $fontMain;
+}
+
+h1 {
+    font-size: $textLg;
+    font-weight: $textBold;
+}
+
+h2 {
+    font-size: $textMd;
+}
+
+h3 {
+    font-size: $textSm;
+}
+
+p {
+    font-size: $textXs;
+}
+
+.font-size {
+    font-size: $textXxs;
+}
+
+.justify-content { 
+    justify-content: $center;
+}
+
+.align.items {
+    align-items: $center;
+}
+
+.flex-flow-row-nowrap {
+    flex-flow: row nowrap;
+} 
+
+.flex-flow-row-wrap {
+    flex-flow: row wrap;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+
+/* HEADER */
+#header {
+    display: flex;
+    grid-area: "header";
+    background-color: $white;
+    div {
+        width: $auto;
+        height: $auto;
+        overflow: $auto;
+        flex-flow: row wrap;
+        ul {
+            list-style: none;
+            li {
+                display: inline-block;
+                padding-right: 5px;
+                .iconosHeader {
+                    width: 14px;
+                    height: 12px;
+                }
+            } 
+        } 
+    } 
+}
+/*Fin Header*/
+
+/* NAV */
+#nav {
+    grid-area: "nav" ;
+    &:hover { 
+        cursor: pointer;
+        .logo-nav-medidas {
+            width: 100px;
+            height: 100px;
+        }  
+    }
+}
+/*Fin Nav*/
+
+/*FOOTER*/
+#pie {
+    grid-area: "footer";
+    overflow: hidden;
+    background-color: $secondaryColor;    
+    .index-contenedor-footer {
+        width: $auto;
+        height: $auto;
+        background-color: $mainColor;
+        color: $colorFooter;
+    }
+    .index-contenedor-footer-mapa {
+        width: $auto;
+        height: $auto;
+        margin-bottom: 1px;
+        text-align: $center;
+        color: $colorFooter;
+        .mapa--ugarte {
+            height: 12rem;
+            width: 16rem ;
+            justify-content: $center;
+        }
+     }
+     .index-contenedor-footer-advertencia {
+        margin: $auto;
+        width: $auto;
+        height: $auto;
+        p{
+            margin-top: 15px;
+            color: $colorAdvFooter;
+            font-size: $textXxs;
+        }
+    }
+} 
+/*FIN DEL FOOTER*/
