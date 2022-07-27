@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+h1,
+h2,
+h3,
+p {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  font-size: 2.5em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 400;
+}
+
+h3 {
+  font-size: 300;
+}
+
+p {
+  font-size: 200;
+}
+
+.font-size {
+  font-size: 100;
+}
+
+.justify-content {
+  justify-content: center;
+}
+
+.align.items {
+  align-items: center;
+}
+
+.flex-flow-row-nowrap {
+  flex-flow: row nowrap;
+}
+
+.flex-flow-row-wrap {
+  flex-flow: row wrap;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+/* HEADER */
+#header {
+  display: flex;
+  grid-area: "header";
+  background-color: rgb(245, 245, 245);
+}
+#header div {
+  width: auto;
+  height: auto;
+  overflow: auto;
+  flex-flow: row wrap;
+}
+#header div ul {
+  list-style: none;
+}
+#header div ul li {
+  display: inline-block;
+  padding-right: 5px;
+}
+#header div ul li .iconosHeader {
+  width: 14px;
+  height: 12px;
+}
+
+/*Fin Header*/
+/* NAV */
+#nav {
+  grid-area: "nav";
+}
+#nav:hover {
+  cursor: pointer;
+}
+#nav:hover .logo-nav-medidas {
+  width: 100px;
+  height: 100px;
+}
+
+/*Fin Nav*/
+/*FOOTER*/
+#pie {
+  grid-area: "footer";
+  overflow: hidden;
+  background-color: rgb(138, 28, 39);
+}
+#pie .index-contenedor-footer {
+  width: auto;
+  height: auto;
+  background-color: rgb(115, 16, 26);
+  color: rgb(241, 236, 236);
+}
+#pie .index-contenedor-footer-mapa {
+  width: auto;
+  height: auto;
+  margin-bottom: 1px;
+  text-align: center;
+  color: rgb(241, 236, 236);
+}
+#pie .index-contenedor-footer-mapa .mapa--ugarte {
+  height: 12rem;
+  width: 16rem;
+  justify-content: center;
+}
+#pie .index-contenedor-footer-advertencia {
+  margin: auto;
+  width: auto;
+  height: auto;
+}
+#pie .index-contenedor-footer-advertencia p {
+  margin-top: 15px;
+  color: rgb(184, 174, 174);
+  font-size: 100;
+}
+
+/*FIN DEL FOOTER*/
+/*MAIN del INDEX*/
+#main {
+  grid-area: "main";
+  padding-bottom: 50px;
+  /*boton Boot, "Encuentre su prop"*/
+}
+#main .index-contenedor-img {
+  height: 0;
+  width: 0;
+  cursor: pointer;
+}
+#main .index-contenedor-img img {
+  height: 0;
+  width: 0;
+}
+#main .index-contenedor-titulo {
+  width: auto;
+  height: auto;
+  margin: auto;
+  padding-top: 10px;
+  padding-bottom: 35px;
+}
+#main .index-contenedor-titulo h2 {
+  font-weight: 700;
+  padding-bottom: 20px;
+  margin: 0px 70px;
+}
+#main .index-contenedor-destacados {
+  margin: auto;
+  padding-top: 35px;
+}
+#main .index-contenedor-destacados h1 {
+  font-weight: 700;
+  padding-bottom: 10px;
+  margin: 0px 25px;
+}
+#main .index-contenedor-destacados #cards {
+  margin: 30px 35px;
+}
+#main .index-contenedor-destacados #cards .propiedades {
+  height: 10rem;
+  width: 12rem;
+}
+#main .index-contenedor-destacados #cards .margin-card {
+  margin-top: 15px;
+}
+#main .index-contenedor-destacados #cards .whole-card {
+  margin-bottom: 20px;
+}
+#main .flex-direction {
+  flex-direction: row;
+}
+#main .btn-color {
+  background-color: rgb(233, 227, 227);
+  border: solid 2px rgb(218, 206, 206);
+}
+#main hr {
+  margin: auto;
+  background: black;
+  width: 100%;
+  height: 4px;
+  border-style: none;
+  margin-bottom: 15px;
+}
+#main .margin-bottom {
+  margin-bottom: 50px;
+}
+
+/*FIN DEL INDEX*/
+
+/*# sourceMappingURL=main.css.map */
