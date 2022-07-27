@@ -12,77 +12,78 @@
 
 <body class="container">
 
-    <header id="header" class="justify-content">
-
-        <div id="headerDiv"> 
-     
+     <!-- Inicia el Header-->
+     <header id="header" class="justify-content">
+        <div> 
             <ul> 
                 <li> 
-                    <p> <img src="../img/Iconos/Logos Negros/logoemailnegro.png.crdownload" 
-                        class="iconosHeader" alt="Logo del mail"> info@ugartepropiedades.com.ar
-                    </p>
+                    <img src="../img/Iconos/Logos Negros/logoemailnegro.png.crdownload" 
+                    class="iconosHeader" alt="Logo del mail"> 
+                </li>
+                <li>
+                    <p> info@ugartepropiedades.com.ar </p> 
                 </li>
 
                 <li>
-                    <p> <img src="../img/Iconos/Logos Negros/whatsapp-negro.png.crdownload" 
-                            class="iconosHeader" alt="Logo Whatsapp"> 11 24601757 
-                    </p>
+                    <img src="../img/Iconos/Logos Negros/whatsapp-negro.png.crdownload" 
+                    class="iconosHeader" alt="Logo Whatsapp">  
+                </li>
+                <li>
+                    <p> 11 24601757 </p>
                 </li>
 
-                <li>
-                    <p> 
-                        <a href="https://www.instagram.com/info.ugarte.propiedades/" target="_blank" >  
-                            <img src="../redes/instagram-icon.svg" class="iconosHeader" 
-                                alt="Logo de Instagram" > 
-                        </a> 
-                    </p>
+                <li> 
+                    <a href="https://www.instagram.com/info.ugarte.propiedades/" target="_blank" >  
+                        <img src="../redes/instagram-icon.svg" class="iconosHeader" 
+                        alt="Logo de Instagram" > 
+                    </a> 
                 </li>
             </ul>
-            
         </div>
-        
     </header>
+    <!-- Fin Header-->
 
+    <!-- Inicia la Nav -->
+    <nav class="navbar navbar-expand-lg bg-light justify-content align-items sticky-top" id="nav">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src= "../img/Iconos/Logos UGARTE/logougarte.jpg" 
+                    alt="Logo de la firma" 
+                    class="logo-nav-medidas">
+            </a>
 
-    <nav id="nav" class="align-items justify-content">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-        <ul class="flex-flow-row-nowrap text-center">
-
-            <div class="navLogo">
-            
-                <li>
-                    <a href= "index.html" >
-                        <img src= "../img/Iconos/Logos UGARTE/logougarte.jpg" 
-                            alt="Logo de la firma" 
-                            class="logoNav">
-                    </a>
-                </li>
-            </div>
-
-            <div>
-                <li>
-                    <a href="../pages/propiedades.html" > PROPIEDADES </a>
-                </li>
-
-                <li>
-                    <a href="../pages/venta.html" > VENTA </a>
-                </li>
-
-                <li>
-                    <a href="../pages/alquiler.html" > ALQUILER </a>
-                </li>
-
-                <li>
-                    <a href="../pages/tasaciones.html" > TASACIONES </a>
-                </li>
-
-                <li>
-                    <a href="../pages/contacto.html" > CONTACTO </a>
-                </li>
-            </div>
-        </ul>
-        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/tasacion.html">TASACIONES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/contacto.html">CONTACTO</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  PROPIEDADES
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="../pages/alquiler.html">ALQUILER</a></li>
+                  <li><a class="dropdown-item" href="../pages/venta.html">VENTA</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="../pages/propiedades.html">PROPIEDADES</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
     </nav>
+    <!-- Fin de la Nav -->
 
 
     <div  id="propiedadesBody"> 
