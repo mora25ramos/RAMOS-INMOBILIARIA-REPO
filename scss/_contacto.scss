@@ -1,0 +1,27 @@
+//Página de contacto
+
+/*Pág Contacto*/
+.mapa-contacto {
+    padding-bottom: 200px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-contacto  {
+   display: flex;
+   flex-direction: row;
+   background-color: white;
+   border-style: none;
+   justify-content: center;
+   margin: $auto;
+    .card-contacto {
+        height: $auto;
+        width: $auto;
+        margin: $auto;
+    }
+ }
+ /*Fin Pàg Contacto*/
+
+
+
