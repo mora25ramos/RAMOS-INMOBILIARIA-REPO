@@ -1,0 +1,45 @@
+/*Mixins*/
+/*Mixins para Break Points*/
+@mixin medias ($breakpoints) {
+    @if break point == mobile 1 {
+        @media (min-width: 320px) {
+            @content;
+        }
+    }
+
+    @if break point == mobile 2 {
+        @media (min-width: 390px) {
+            @content;
+        }
+    }
+    
+    @if break point == tablet 1 {
+        @media (min-width: 576px) {
+            @content;
+        }
+    }
+    
+    @if break point == tablet 2 {
+        @media (min-width: 768px) {
+            @content;
+        }
+    }
+    
+    @if break point == tablet 3 {
+        @media (min-width: 900px) {
+            @content;
+        }
+    }
+    
+    @if break point == desktop 1 {
+        @media (min-width: 1024px) {
+            @content;
+        }
+    }
+    
+    @if break point == desktop 2 {
+        @media (min-width: 1200px) {
+            @content;
+        }
+    }
+}
