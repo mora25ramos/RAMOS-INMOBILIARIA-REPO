@@ -1,0 +1,30 @@
+/* NAV */
+#nav {
+    grid-area: "nav" ;
+    &:hover { 
+        cursor: pointer;
+    }
+    .container-fluid .navbar-brand .logo-nav-medidas {
+        @include media (xs) { 
+            width: 100px;
+            height: 100px;
+        }  
+        @include media (sm) { 
+            width: 140px;
+            height: 140px;
+        } 
+        @include media (md){ 
+            width: 180px;
+            height: 180px;    
+        }  
+        @include media (lg) { 
+            width: 210px;
+            height: 210px;    
+        }
+        @include media (xl) { 
+            width: 250px;
+            height: 250px;     
+        }
+    }
+}
+/*Fin Nav*/
