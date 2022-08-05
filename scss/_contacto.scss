@@ -1,26 +1,28 @@
 //Página de contacto
 
 /*Pág Contacto*/
-.mapa-contacto {
-    padding-bottom: 200px 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.fondo {
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-size: cover;
+    background-image: url(../img/Fondos/fondoblurry.jpg);
 }
 
-.contenedor-contacto  {
-   display: flex;
-   flex-direction: row;
-   background-color: white;
-   border-style: none;
-   justify-content: center;
-   margin: $auto;
-    .card-contacto {
-        height: $auto;
-        width: $auto;
-        margin: $auto;
+.contenedor-contacto {
+    margin: $a;
+    width: $a;
+    .mapa-contacto {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 25px 0px;
+        iframe {
+            width: 700px;
+            height: 480px;
+        }
     }
- }
+    
+}
  /*Fin Pàg Contacto*/
 
 
