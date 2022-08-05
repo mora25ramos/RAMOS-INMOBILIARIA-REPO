@@ -11,24 +11,28 @@
         img {
             height: $h-0;
             width: $w-0;
-         }
-     }
-     .index-contenedor-titulo {
+        }
+    }
+    .index-contenedor-titulo {
         width: $a;
         height: $a;
         margin: $a;
         padding-top: 10px;
         padding-bottom: 35px;
-        h2{
+        h1{
             font-weight: $textBold;
             padding-bottom: 20px;
             margin: 0px 70px;
-         }
-     }  
+        }
+        section div .btn-rounded{
+            @extend .btn-more;
+            border-radius: 5px;
+        }
+    }  
      .index-contenedor-destacados {
         margin: $a;
         padding-top: 35px;
-        h1{
+        h2{
             font-weight: $textBold;
             padding-bottom: 10px;
             margin: 0px 25px;
