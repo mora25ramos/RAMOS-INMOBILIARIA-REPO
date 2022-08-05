@@ -1,4 +1,24 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"); /*Cosas generales*/
+body {
+  max-width: 342vw;
+  overflow-x: hidden;
+  background: linear-gradient(to bottom, rgb(250, 248, 246), rgb(240, 238, 238), rgb(235, 231, 231));
+}
+@media (min-width: 1024px) {
+  body {
+    max-width: 1400px;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: inline-block;
+}
+
 h1,
 h2,
 h3,
@@ -43,10 +63,20 @@ p {
   flex-flow: row wrap;
 }
 
+.flex-direction-column {
+  flex-direction: column;
+}
+
 .pointer {
   cursor: pointer;
 }
 
+.propiedades {
+  height: 12em;
+  width: 11em;
+}
+
+/*Fin de las generalidades*/
 /* HEADER */
 #header {
   display: flex;
@@ -72,19 +102,6 @@ p {
 }
 
 /*Fin Header*/
-/* NAV */
-#nav {
-  grid-area: "nav";
-}
-#nav:hover {
-  cursor: pointer;
-}
-#nav:hover .logo-nav-medidas {
-  width: 100px;
-  height: 100px;
-}
-
-/*Fin Nav*/
 /*FOOTER*/
 #pie {
   grid-area: "footer";
@@ -121,6 +138,43 @@ p {
 }
 
 /*FIN DEL FOOTER*/
+/*paddings*/
+.p-t {
+  padding-top: 35px;
+}
+
+.p-b-texto {
+  padding-bottom: 25px;
+}
+
+.p-b-contenido {
+  padding-bottom: 65px;
+}
+
+.p-t-footer {
+  padding-top: 15px;
+}
+
+/*margins*/
+.m-25 {
+  margin: 25px;
+}
+
+/* NAV */
+#nav {
+  grid-area: "nav";
+}
+#nav:hover {
+  cursor: pointer;
+}
+@media (min-width: 1024px) {
+  #nav .logo-nav-medidas {
+    width: 190px;
+    height: 190px;
+  }
+}
+
+/*Fin Nav*/
 /*MAIN del INDEX*/
 #main {
   grid-area: "main";
@@ -190,5 +244,91 @@ p {
 }
 
 /*FIN DEL INDEX*/
+/*Pág Contacto*/
+.fondo {
+  background-repeat: no-repeat;
+  background-position: fixed;
+  background-size: cover;
+  background-image: url(../img/Fondos/fondoblurry.jpg);
+}
+
+.contenedor-contacto {
+  margin: auto;
+  width: auto;
+}
+.contenedor-contacto .mapa-contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 0px;
+}
+.contenedor-contacto .mapa-contacto iframe {
+  width: 700px;
+  height: 480px;
+}
+
+/*Fin Pàg Contacto*/
+/*Pàg Tasaciones*/
+.contenedor-hr-tasaciones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contenedor-hr-tasaciones hr {
+  width: 80%;
+  height: 1px;
+}
+
+.icono-tasaciones {
+  width: auto;
+  height: 65px;
+  margin-top: 15px;
+}
+
+.contenedor-form-tasaciones {
+  margin-bottom: 45px;
+  margin-right: 35px;
+  margin-left: 35px;
+  padding: 10px;
+  color: #999897;
+}
+.contenedor-form-tasaciones .btn-bg {
+  background-color: rgb(233, 227, 227);
+}
+
+/* FIN TASACIONES*/
+/*Pág Props, Alq y Ventas*/
+#propiedadesBody {
+  display: flex;
+  background-image: url(../img/Fondos/fondoblurry.jpg);
+  background-repeat: no-repeat;
+  background-position: fixed;
+  background-size: cover;
+}
+#propiedadesBody .contenedor-props {
+  display: grid;
+  grid-template-columns: 22% 78%;
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas: "aside titulo" "aside props";
+}
+#propiedadesBody .contenedor-props #filtros {
+  background-color: #e2dbd4;
+  font-size: 200;
+  padding-top: 40px;
+  padding-left: 5px;
+  grid-area: "aside";
+}
+#propiedadesBody .contenedor-props #mainProps {
+  display: flex;
+  flex-flow: column nowrap;
+}
+#propiedadesBody .contenedor-props #mainProps .titulo-props {
+  grid-area: "titulo";
+}
+#propiedadesBody .contenedor-props #mainProps .props-cards {
+  grid-area: "props";
+}
+
+/* Fin pág Props, Alq y Ventas*/
 
 /*# sourceMappingURL=main.css.map */
