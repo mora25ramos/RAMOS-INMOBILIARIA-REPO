@@ -1,4 +1,38 @@
 //general
+
+/*Cosas generales*/
+body {
+    max-width: 342vw;
+    overflow-x: hidden;
+    background: linear-gradient(to bottom, rgb(250, 248, 246), rgb(240, 238, 238), rgb(235, 231, 231));
+    @include media ('xs'){
+        max-width: 370px;
+    }
+    @include media ('sm'){
+        max-width: 540px;  
+    }
+    @include media ('md'){
+        max-width: 690px;  
+    }
+    @include media ('lg'){
+        max-width: 890px;   
+    }
+    @include media ('xl'){
+        max-width: 1000px;  
+    }
+    @include media ('xxl'){
+        max-width: 1400px;  
+    }
+} 
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+}
+
 h1,
 h2,
 h3,
@@ -27,26 +61,24 @@ p {
     font-size: $textXxs;
 }
 
-.justify-content { 
-    justify-content: $center;
+.justify-content { justify-content: $center;}
+
+.align.items {align-items: $center;}
+
+.flex-flow-row-nowrap {flex-flow: row nowrap;} 
+
+.flex-flow-row-wrap {flex-flow: row wrap;}
+
+.flex-direction-column {flex-direction: column;}
+
+.pointer {cursor: pointer;}
+
+.propiedades  {
+    height: 12em;
+    width: 11em;
 }
 
-.align.items {
-    align-items: $center;
-}
-
-.flex-flow-row-nowrap {
-    flex-flow: row nowrap;
-} 
-
-.flex-flow-row-wrap {
-    flex-flow: row wrap;
-}
-
-.pointer {
-    cursor: pointer;
-}
-
+/*Fin de las generalidades*/
 
 /* HEADER */
 #header {
@@ -54,9 +86,9 @@ p {
     grid-area: "header";
     background-color: $white;
     div {
-        width: $auto;
-        height: $auto;
-        overflow: $auto;
+        width: $a;
+        height: $a;
+        overflow: $a;
         flex-flow: row wrap;
         ul {
             list-style: none;
@@ -73,18 +105,7 @@ p {
 }
 /*Fin Header*/
 
-/* NAV */
-#nav {
-    grid-area: "nav" ;
-    &:hover { 
-        cursor: pointer;
-        .logo-nav-medidas {
-            width: 100px;
-            height: 100px;
-        }  
-    }
-}
-/*Fin Nav*/
+
 
 /*FOOTER*/
 #pie {
@@ -92,14 +113,14 @@ p {
     overflow: hidden;
     background-color: $secondaryColor;    
     .index-contenedor-footer {
-        width: $auto;
-        height: $auto;
+        width: $a;
+        height: $a;
         background-color: $mainColor;
         color: $colorFooter;
     }
     .index-contenedor-footer-mapa {
-        width: $auto;
-        height: $auto;
+        width: $a;
+        height: $a;
         margin-bottom: 1px;
         text-align: $center;
         color: $colorFooter;
@@ -110,9 +131,9 @@ p {
         }
      }
      .index-contenedor-footer-advertencia {
-        margin: $auto;
-        width: $auto;
-        height: $auto;
+        margin: $a;
+        width: $a;
+        height: $a;
         p{
             margin-top: 15px;
             color: $colorAdvFooter;
