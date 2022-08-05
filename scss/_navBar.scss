@@ -4,27 +4,32 @@
     &:hover { 
         cursor: pointer;
     }
-    .container-fluid .navbar-brand .logo-nav-medidas {
-        @include media (xs) { 
+    .logo-nav-medidas { 
+        @include media ('xs') {
             width: 100px;
             height: 100px;
-        }  
-        @include media (sm) { 
+        }   
+        @include media ('sm'){
+            width: 135px;
+            height: 135px;
+        } 
+        @include media ('md'){
             width: 140px;
             height: 140px;
-        } 
-        @include media (md){ 
+        }
+        @include media ('lg'){
+            width: 160px;
+            height: 160px;
+        }
+        @include media ('xl'){
             width: 180px;
-            height: 180px;    
-        }  
-        @include media (lg) { 
-            width: 210px;
-            height: 210px;    
+            height: 180px; 
         }
-        @include media (xl) { 
-            width: 250px;
-            height: 250px;     
+        @include media ('xxl'){
+            width: 190px;
+            height: 190px;   
         }
-    }
+    } 
+    
 }
 /*Fin Nav*/
