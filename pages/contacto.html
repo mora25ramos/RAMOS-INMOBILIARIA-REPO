@@ -4,17 +4,25 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>UGARTE Propiedades </title>
+        <title>UGARTE Propiedades - Contacto </title>
         <link rel="shortcut icon" href="../img/Iconos/Logos UGARTE/logougarte.jpg"
-            alt="Logo de la Inmobiliaria">
-        <link rel="stylesheet" type="text/css" href="../style.css/style.css" >
+            alt="Logo de la Inmobiliaria UGARTE Propiedades">
+
+        <!-- metas seo-->
+        <meta name="description" content="UGARTE Propiedades, estamos siemprea su servicio. Puede llamarnos por teléfono, enviar un mail, consultar nuestra página de Instagram y también la de Zonaprop.">
+
+        <!-- link al css bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    
+        <!-- link a mi css-->
+        <link rel="stylesheet" type="text/css" href="../style.css/main.css" >
+
     </head>
 
+    <body>
 
-    <body class="container">
-
-         <!-- Inicia el Header-->
-         <header id="header" class="justify-content">
+        <!-- Inicia el Header-->
+        <header id="header" class="justify-content">
             <div> 
                 <ul> 
                     <li> 
@@ -27,7 +35,7 @@
 
                     <li>
                         <img src="../img/Iconos/Logos Negros/whatsapp-negro.png.crdownload" 
-                        class="iconosHeader" alt="Logo Whatsapp">  
+                        class="iconosHeader" alt="Logo de Whatsapp">  
                     </li>
                     <li>
                         <p> 11 24601757 </p>
@@ -36,7 +44,7 @@
                     <li> 
                         <a href="https://www.instagram.com/info.ugarte.propiedades/" target="_blank" >  
                             <img src="../redes/instagram-icon.svg" class="iconosHeader" 
-                            alt="Logo de Instagram" > 
+                            alt="Logo de Instagram con link al Instagram de la inmbiliaria" > 
                         </a> 
                     </li>
                 </ul>
@@ -45,11 +53,11 @@
         <!-- Fin Header-->
     
         <!-- Inicia la Nav -->
-        <nav class="navbar navbar-expand-lg bg-light justify-content align-items sticky-top" id="nav">
+        <nav id="nav" class="navbar navbar-expand-lg bg-light justify-content align-items sticky-top">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">
                     <img src= "../img/Iconos/Logos UGARTE/logougarte.jpg" 
-                        alt="Logo de la firma" 
+                        alt="Logo de la firma. Dice UGARTE Propiedades en blanco y el fondo es color bordó" 
                         class="logo-nav-medidas">
                 </a>
 
@@ -87,96 +95,52 @@
         <!-- Fin de la Nav -->
 
 
-        <div id="fondo" class="contenedorContacto">
+        <!-- Inicia Main -->
+        <main class="fondo">
+            <div class="contenedor-contacto">
 
-            <aside id="contacto-aside">  
-                <div id="aside-contacto-bg">
-
-                    <div>
-                        <section id="sectionInfo">
-                            <h3 class="text-center" > ¿Cómo contactarnos? </h3>
-                        
-                            <p class="pMain"> Estamos activos en <a href="https://www.zonaprop.com.ar/inmobiliarias/ugarte_17132843-inmuebles.html" target="_blank" > Zona Prop </a> </p>
-                            <p class="pMain"> También pueden llamar a la oficina al 20850282 o a nuestro Whatsapp: 1124601757 </p>
-                            <p class="pMain"> Y dejarnos un like en <a href="https://www.instagram.com/info.ugarte.propiedades/" target="_blank" > Instagram </a> </p>
-    
-                        </section>
-                    </div>
-
-                    <div> 
-                        <section>  
-                            <h3 class="text-center"> Dejanos tu consulta </h3>
-                            
-                            <form action="envio.php">
-                                <div class="formConsulta">
-                                    <label for="nombre" > Nombre y Apellido </label>
-                                    <br><input type="text" id="nombre" placeholder="Lucia Gomez" >
-                                </div>
-
-                                <div class="formConsulta"> 
-                                    <label for="correo" > E-mail </label>
-                                    <br><input type="correo" id="correo" placeholder="tucorreo@gmail.com" >
-                                </div>
-                                            
-                                <div class="line-height formConsulta">
-                                    <label for="consulta" > Tu consulta </label>
-                                    <br><input type="consulta" id="consulta" placeholder="Deje su consulta aqui" >                        <input type="submit" value="Enviar" >
-                                </div>
-                                        
-                            </form>
-                        </section>
-                    </div>
+                <div class="text-center">
+                    <h3 class="fw-lighter"> ¿Dónde encontrarnos?</h3>
                 </div>
-            </aside>
-
-            <main id="mainContacto">
-                <section> 
-                    <h2 class="titulosMain text-center"> ¿Dónde nos encontramos? </h2>
-                            
-                    <div class="text-center"> 
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3287.5721386053674!2d-58.49249698505537!3d-34.513729860248695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb13eb44f18e1%3A0x2841a2f6c3a1bb90!2sGdor.%20Marcelino%20Ugarte%201582%2C%20B1636BWN%20Olivos%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1655356247895!5m2!1ses-419!2sar" 
-                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                        </iframe>
-                    </div>
+        
+                <div class="text-center">
+                    <h1>Olivos</h1>
+                </div>
+                
+                <section class="mapa-contacto">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3287.5721386053674!2d-58.49249698505537!3d-34.513729860248695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb13eb44f18e1%3A0x2841a2f6c3a1bb90!2sGdor.%20Marcelino%20Ugarte%201582%2C%20B1636BWN%20Olivos%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1655356247895!5m2!1ses-419!2sar" 
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
                 </section>
-            </main>
-
-        </div>
+                
+            </div>    
+        </main>
+        
 
     
-        <footer id="pie"> 
-            <main>
-
-                <section id="info">
-                    <div class="container">
-
-                        <ul id="pieUl"> 
-
-                            <div>
-                                <li> 
-                                    <p> TEL: 2085-0282</p>
-                                </li>
-                            </div>
-
-                            <div> 
-                                <li>
-                                    <p> MARTILLERO: ALEJANDRO RAMOS C.S.I. 5449 </p>
-                                </li>
-                            </div>
-
-                        </ul>
+        <!-- Inicia FOOTER-->
+        <footer id="pie" class="p-t-footer">
+            <section class="index-contenedor-footer">
+                <ul> 
+                    <div>
+                        <li> 
+                            <p> TEL: 2085-0282</p>
+                        </li>
                     </div>
-                </section>
-
-                    
-
-                <section id="advertencia">
-                    <div class="container">
-                        <p class="final"> Todas las medidas enunciadas son meramente orientativas, las medidas exactas serán las que se expresen en el respectivo título de propiedad de cada inmueble. Todas las fotos, imagenes y videos son meramente ilustrativos y no contractuales. Los precios enunciados son meramente orientativos y no contractuales.. </p>
+        
+                    <div> 
+                        <li>
+                            <p> MARTILLERO: ALEJANDRO RAMOS C.S.I. 5449 </p>
+                        </li>
                     </div>
-                </section>
-            </main>
+                </ul>
+            </section>
         </footer>
+        <!-- Cierra FOOTER-->
 
+
+        <!-- script bootstrap-->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
     </body>
 </html>
