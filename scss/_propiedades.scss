@@ -1,0 +1,35 @@
+ /*Pág Props, Alq y Ventas*/
+
+#propiedadesBody  {
+    display: flex;
+    background-image: url(../img/Fondos/fondoblurry.jpg);
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-size: cover;
+    .contenedor-props{
+        display: grid;
+        grid-template-columns: 22% 78%;
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas: 
+        "aside titulo"
+        "aside props";
+        #filtros  {
+            background-color: $gris-claro;
+            font-size: $textXs;
+            padding-top: 40px;
+            padding-left: 5px;
+            grid-area: "aside";
+        }
+        #mainProps {
+            display: flex;
+            flex-flow: column nowrap;
+            .titulo-props  {
+                grid-area: "titulo";
+            }   
+            .props-cards  {
+                grid-area: "props";
+            }
+        }
+    }
+}
+/* Fin pág Props, Alq y Ventas*/
