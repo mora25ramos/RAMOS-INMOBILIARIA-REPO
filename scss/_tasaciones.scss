@@ -1,0 +1,28 @@
+/*Pàg Tasaciones*/
+.contenedor-hr-tasaciones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    hr{
+        width: 80%;
+        height: 1px;
+    }
+}
+
+.icono-tasaciones {
+    width: $a;
+    height: 65px;
+    margin-top: 15px;
+ }
+
+.contenedor-form-tasaciones {
+    margin-bottom: 45px;
+    margin-right: 35px;
+    margin-left: 35px;
+    padding: 10px;
+    color: $gris;
+    .btn-bg {
+        background-color: $btn-bg;
+    }
+}
+/* FIN TASACIONES*/
