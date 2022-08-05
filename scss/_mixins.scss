@@ -1,45 +1,59 @@
-/*Mixins*/
-/*Mixins para Break Points*/
-@mixin medias ($breakpoints) {
-    @if break point == mobile 1 {
-        @media (min-width: 320px) {
-            @content;
-        }
-    }
+//Mixins
+//Mixins para Break Points
 
-    @if break point == mobile 2 {
-        @media (min-width: 390px) {
+$breakpoint: (
+    'xs': 280px,
+    'sm': 375px,
+    'md': 540px,
+    'lg': 700px,
+    'xl': 900px,
+    'xxl': 1024px,
+);
+
+@mixin media ($breakpoint){
+    @if $breakpoint == 'xs' {
+        @media (min-width: 280px) {
             @content;
-        }
+        }   
     }
-    
-    @if break point == tablet 1 {
-        @media (min-width: 576px) {
+}
+
+@mixin media ($breakpoint){
+    @if $breakpoint == 'sm' {
+        @media (min-width: 375px) {
             @content;
-        }
+        }   
     }
-    
-    @if break point == tablet 2 {
-        @media (min-width: 768px) {
+}
+
+@mixin media ($breakpoint){
+    @if $breakpoint == 'md' {
+        @media (min-width: 540px) {
             @content;
-        }
+        }   
     }
-    
-    @if break point == tablet 3 {
+}
+
+@mixin media ($breakpoint){
+    @if $breakpoint == 'lg' {
+        @media (min-width: 700px) {
+            @content;
+        }   
+    }
+}
+
+@mixin media ($breakpoint){
+    @if $breakpoint == 'xl' {
         @media (min-width: 900px) {
             @content;
-        }
+        }   
     }
-    
-    @if break point == desktop 1 {
+}
+
+@mixin media ($breakpoint){
+    @if $breakpoint == 'xxl' {
         @media (min-width: 1024px) {
             @content;
-        }
-    }
-    
-    @if break point == desktop 2 {
-        @media (min-width: 1200px) {
-            @content;
-        }
+        }   
     }
 }
