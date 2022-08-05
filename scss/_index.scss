@@ -14,9 +14,9 @@
          }
      }
      .index-contenedor-titulo {
-        width: $auto;
-        height: $auto;
-        margin: $auto;
+        width: $a;
+        height: $a;
+        margin: $a;
         padding-top: 10px;
         padding-bottom: 35px;
         h2{
@@ -26,7 +26,7 @@
          }
      }  
      .index-contenedor-destacados {
-        margin: $auto;
+        margin: $a;
         padding-top: 35px;
         h1{
             font-weight: $textBold;
@@ -56,7 +56,7 @@
         border: $btn-border;
     }
     hr {
-        margin: $auto;
+        margin: $a;
         background: black;
         width: $w-100;
         height: 4px;
