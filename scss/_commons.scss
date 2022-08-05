@@ -5,22 +5,22 @@ body {
     max-width: 342vw;
     overflow-x: hidden;
     background: linear-gradient(to bottom, rgb(250, 248, 246), rgb(240, 238, 238), rgb(235, 231, 231));
-    @include media ('xs'){
+    @include xs{
         max-width: 370px;
     }
-    @include media ('sm'){
+    @include sm{
         max-width: 540px;  
     }
-    @include media ('md'){
+    @include md{
         max-width: 690px;  
     }
-    @include media ('lg'){
+    @include lg{
         max-width: 890px;   
     }
-    @include media ('xl'){
+    @include xl{
         max-width: 1000px;  
     }
-    @include media ('xxl'){
+    @include xxl{
         max-width: 1400px;  
     }
 } 
@@ -33,32 +33,42 @@ li {
     display: inline-block;
 }
 
-h1,
-h2,
-h3,
 p {
     font-family: $fontMain;
+    font-size: $textXxs;
+
+    @include md{
+        font-size: $textSm;
+    }
+    @include lg{
+        font-size: $textMd;
+    }
 }
 
 h1 {
-    font-size: $textLg;
+    font-family: $fontMain;
+    font-size: $textSm;
     font-weight: $textBold;
 }
 
 h2 {
+    font-family: $fontMain;
     font-size: $textMd;
 }
 
 h3 {
+    font-family: $fontMain;
     font-size: $textSm;
 }
 
-p {
-    font-size: $textXs;
-}
 
 .font-size {
+    font-family: $fontMain;
     font-size: $textXxs;
+
+    @include md{
+        font-size: $textXs;
+    }
 }
 
 .justify-content { justify-content: $center;}
@@ -78,6 +88,18 @@ p {
     width: 11em;
 }
 
+.btn-more {
+   background-color: $btn-bg;
+   border: solid 1.5px $btn-border;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   &:hover{
+        cursor: pointer;
+        color: $white;
+        background-color: $btn-hover;
+    }
+}
 /*Fin de las generalidades*/
 
 /* HEADER */
