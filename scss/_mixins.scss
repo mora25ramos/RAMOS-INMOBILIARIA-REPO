@@ -10,50 +10,39 @@ $breakpoint: (
     'xxl': 1024px,
 );
 
-@mixin media ($breakpoint){
-    @if $breakpoint == 'xs' {
-        @media (min-width: 280px) {
-            @content;
-        }   
-    }
+@mixin xs{
+    @media (min-width: 280px) and (max-width: 374px) {
+        @content;
+    }   
 }
 
-@mixin media ($breakpoint){
-    @if $breakpoint == 'sm' {
-        @media (min-width: 375px) {
-            @content;
-        }   
-    }
+@mixin sm{
+    @media (min-width: 375px) and (max-width: 539px) {
+        @content;
+    }   
 }
 
-@mixin media ($breakpoint){
-    @if $breakpoint == 'md' {
-        @media (min-width: 540px) {
-            @content;
-        }   
-    }
+@mixin md{
+    @media (min-width: 540px) and (max-width: 699px) {
+        @content;
+    }   
 }
 
-@mixin media ($breakpoint){
-    @if $breakpoint == 'lg' {
-        @media (min-width: 700px) {
-            @content;
-        }   
-    }
+@mixin lg{
+    @media (min-width: 700px) and (max-width: 999px) {
+        @content;
+    }   
 }
 
-@mixin media ($breakpoint){
-    @if $breakpoint == 'xl' {
-        @media (min-width: 900px) {
-            @content;
-        }   
-    }
+@mixin xl{
+    @media (min-width: 1000px) and (max-width: 1199px) {
+        @content;
+    }   
 }
 
-@mixin media ($breakpoint){
-    @if $breakpoint == 'xxl' {
-        @media (min-width: 1024px) {
-            @content;
-        }   
-    }
+@mixin xxl{
+    @media (min-width: 1200px) and (max-width: 1400px) {
+        @content;
+    }   
 }
+
