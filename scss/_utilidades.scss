@@ -1,25 +1,29 @@
 //Utilidades
 
+/*Extends*/
+.btn-more {
+    background-color: map-get($map: $paleta-button, $key: 'fondo' );
+    border: solid 1.5px map-get($map: $paleta-button, $key: 'border' );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover{
+        cursor: pointer;
+        color: $white;
+        background-color: map-get($map: $paleta-button, $key: 'hover' );
+    }
+}
+
 /*paddings*/
-.p-t {
-    padding-top: 35px;
-}
+.p-t { padding-top: 35px;}
 
-.p-b-texto {
-    padding-bottom: 25px;
-}
+.p-b-texto { padding-bottom: 25px;}
 
-.p-b-contenido {
-    padding-bottom: 65px;
-}
+.p-b-contenido {padding-bottom: 65px;}
 
-.p-t-footer {
-    padding-top: 15px;
-}
+.p-t-footer {padding-top: 15px;}
 
 /*margins*/
 
-.m-25 {
-    margin: 25px;
-}
+.m-25 { margin: 25px;}
 
