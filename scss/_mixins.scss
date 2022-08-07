@@ -1,15 +1,5 @@
-//Mixins
-//Mixins para Break Points
-
-$breakpoint: (
-    'xs': 280px,
-    'sm': 375px,
-    'md': 540px,
-    'lg': 700px,
-    'xl': 900px,
-    'xxl': 1024px,
-);
-
+//Mixins, maps, extends
+//Mixins para Break Points//
 @mixin xs{
     @media (min-width: 280px) and (max-width: 374px) {
         @content;
@@ -45,4 +35,33 @@ $breakpoint: (
         @content;
     }   
 }
+
+//Mixin texto//
+
+@mixin texto ($family, $size) {
+    font-family: $family;
+    font-size: $size;
+}
+
+//Mixin D-felx//
+
+@mixin d-flex ($justify, $align){
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+}  
+
+//Map colores//
+$paleta-footer : (
+    'bg-oscuro': $mainColor,
+    'bg-claro': $secondaryColor,
+    'textoPrincipal': $mainColorFooter,
+    'textoSecundario': $secondaryColorFooter,
+);
+
+$paleta-button : (
+    'fondo': $btn-bg,
+    'border': $btn-border,
+    'hover': $btn-hover,
+);
 
