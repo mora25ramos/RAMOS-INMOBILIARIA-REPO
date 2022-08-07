@@ -1,8 +1,6 @@
 /*Pàg Tasaciones*/
 .contenedor-hr-tasaciones{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include d-flex ($center, $center);
     hr{
         width: 80%;
         height: 1px;
