@@ -44,47 +44,6 @@ li {
   display: inline-block;
 }
 
-p {
-  font-family: "Open Sans", sans-serif;
-  font-size: 100;
-}
-@media (min-width: 540px) and (max-width: 699px) {
-  p {
-    font-size: 300;
-  }
-}
-@media (min-width: 700px) and (max-width: 999px) {
-  p {
-    font-size: 400;
-  }
-}
-
-h1 {
-  font-family: "Open Sans", sans-serif;
-  font-size: 300;
-  font-weight: 700;
-}
-
-h2 {
-  font-family: "Open Sans", sans-serif;
-  font-size: 400;
-}
-
-h3 {
-  font-family: "Open Sans", sans-serif;
-  font-size: 300;
-}
-
-.font-size {
-  font-family: "Open Sans", sans-serif;
-  font-size: 100;
-}
-@media (min-width: 540px) and (max-width: 699px) {
-  .font-size {
-    font-size: 200;
-  }
-}
-
 .justify-content {
   justify-content: center;
 }
@@ -114,17 +73,80 @@ h3 {
   width: 11em;
 }
 
-.btn-more, #main .index-contenedor-titulo section div .btn-rounded {
-  background-color: rgb(233, 227, 227);
-  border: solid 1.5px solid 2px rgb(218, 206, 206);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+h1 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2em;
+  font-weight: 800;
 }
-.btn-more:hover, #main .index-contenedor-titulo section div .btn-rounded:hover {
-  cursor: pointer;
-  color: rgb(245, 245, 245);
-  background-color: rgb(88, 84, 84);
+@media (min-width: 700px) and (max-width: 999px) {
+  h1 {
+    font-size: 2.5em;
+  }
+}
+
+h2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5em;
+}
+@media (min-width: 700px) and (max-width: 999px) {
+  h2 {
+    font-size: 2em;
+  }
+}
+
+h3 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+}
+@media (min-width: 700px) and (max-width: 999px) {
+  h3 {
+    font-size: 1.5em;
+  }
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.6em;
+}
+@media (min-width: 375px) and (max-width: 539px) {
+  p {
+    font-size: 0.7em;
+  }
+}
+@media (min-width: 700px) and (max-width: 999px) {
+  p {
+    font-size: 1em;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1199px) {
+  p {
+    font-size: 1.2em;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1400px) {
+  p {
+    font-size: 1.2em;
+  }
+}
+
+.font-size {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.5em;
+}
+@media (min-width: 700px) and (max-width: 999px) {
+  .font-size {
+    font-size: 0.6em;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1199px) {
+  .font-size {
+    font-size: 0.7em;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .font-size {
+    font-size: 1em;
+  }
 }
 
 /*Fin de las generalidades*/
@@ -185,10 +207,24 @@ h3 {
 #pie .index-contenedor-footer-advertencia p {
   margin-top: 15px;
   color: rgb(184, 174, 174);
-  font-size: 100;
+  font-size: 0.6em;
 }
 
 /*FIN DEL FOOTER*/
+/*Extends*/
+.btn-more, #main .index-contenedor-titulo section div .btn-rounded {
+  background-color: rgb(233, 227, 227);
+  border: solid 1.5px solid 2px rgb(218, 206, 206);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-more:hover, #main .index-contenedor-titulo section div .btn-rounded:hover {
+  cursor: pointer;
+  color: rgb(245, 245, 245);
+  background-color: rgb(88, 84, 84);
+}
+
 /*paddings*/
 .p-t {
   padding-top: 35px;
@@ -265,9 +301,33 @@ h3 {
   width: 0;
   cursor: pointer;
 }
+@media (min-width: 700px) and (max-width: 999px) {
+  #main .index-contenedor-img {
+    height: 620px;
+    width: auto;
+    overflow: auto;
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1199px) {
+  #main .index-contenedor-img {
+    height: 690px;
+    width: auto;
+    overflow: auto;
+    margin-bottom: 25px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1400px) {
+  #main .index-contenedor-img {
+    height: 720px;
+    width: auto;
+    overflow: auto;
+    margin-bottom: 30px;
+  }
+}
 #main .index-contenedor-img img {
-  height: 0;
-  width: 0;
+  height: 100%;
+  width: 100%;
 }
 #main .index-contenedor-titulo {
   width: auto;
@@ -277,7 +337,7 @@ h3 {
   padding-bottom: 35px;
 }
 #main .index-contenedor-titulo h1 {
-  font-weight: 700;
+  font-weight: 800;
   padding-bottom: 20px;
   margin: 0px 70px;
 }
@@ -289,7 +349,7 @@ h3 {
   padding-top: 35px;
 }
 #main .index-contenedor-destacados h2 {
-  font-weight: 700;
+  font-weight: 800;
   padding-bottom: 10px;
   margin: 0px 25px;
 }
@@ -340,8 +400,8 @@ h3 {
 }
 .contenedor-contacto .mapa-contacto {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   padding: 25px 0px;
 }
 .contenedor-contacto .mapa-contacto iframe {
@@ -353,8 +413,8 @@ h3 {
 /*Pàg Tasaciones*/
 .contenedor-hr-tasaciones {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 .contenedor-hr-tasaciones hr {
   width: 80%;
@@ -395,7 +455,7 @@ h3 {
 }
 #propiedadesBody .contenedor-props #filtros {
   background-color: #e2dbd4;
-  font-size: 200;
+  font-size: 0.7em;
   padding-top: 40px;
   padding-left: 5px;
   grid-area: "aside";
