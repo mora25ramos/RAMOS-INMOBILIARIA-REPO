@@ -33,44 +33,6 @@ li {
     display: inline-block;
 }
 
-p {
-    font-family: $fontMain;
-    font-size: $textXxs;
-
-    @include md{
-        font-size: $textSm;
-    }
-    @include lg{
-        font-size: $textMd;
-    }
-}
-
-h1 {
-    font-family: $fontMain;
-    font-size: $textSm;
-    font-weight: $textBold;
-}
-
-h2 {
-    font-family: $fontMain;
-    font-size: $textMd;
-}
-
-h3 {
-    font-family: $fontMain;
-    font-size: $textSm;
-}
-
-
-.font-size {
-    font-family: $fontMain;
-    font-size: $textXxs;
-
-    @include md{
-        font-size: $textXs;
-    }
-}
-
 .justify-content { justify-content: $center;}
 
 .align.items {align-items: $center;}
@@ -88,18 +50,58 @@ h3 {
     width: 11em;
 }
 
-.btn-more {
-   background-color: $btn-bg;
-   border: solid 1.5px $btn-border;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   &:hover{
-        cursor: pointer;
-        color: $white;
-        background-color: $btn-hover;
+h1 {
+    @include texto ($fontMain, $textLg);
+    font-weight: $textBold;
+    @include lg{
+        font-size: $textXl;
     }
 }
+
+h2 {
+    @include texto ($fontMain, $textMd);
+    @include lg{
+        font-size: $textLg;
+    }
+}
+
+h3 {
+    @include texto ($fontMain, $textSm);
+    @include lg{
+        font-size: $textMd;
+    }
+}
+
+p {
+    @include texto ($fontMain, $textXxs);
+    @include sm{
+        font-size: $textXs;
+    }
+    @include lg{
+        font-size: $textSm;
+    }
+    @include xl{
+        font-size: $textPxl;
+    }
+    @include xxl{
+        font-size: $textPxl;
+    }
+}
+
+.font-size {
+    @include texto ($fontMain, $textXxss);
+    @include lg{
+        font-size: $textXxs;
+    }
+    @include xl{
+        font-size: $textXs;
+    }
+    @include xxl{
+        font-size: $textSm;
+    }
+}
+
+
 /*Fin de las generalidades*/
 
 /* HEADER */
@@ -138,14 +140,14 @@ h3 {
         width: $a;
         height: $a;
         background-color: $mainColor;
-        color: $colorFooter;
+        color: $mainColorFooter;
     }
     .index-contenedor-footer-mapa {
         width: $a;
         height: $a;
         margin-bottom: 1px;
         text-align: $center;
-        color: $colorFooter;
+        color: $mainColorFooter;
         .mapa--ugarte {
             height: 12rem;
             width: 16rem ;
@@ -158,7 +160,7 @@ h3 {
         height: $a;
         p{
             margin-top: 15px;
-            color: $colorAdvFooter;
+            color: $secondaryColorFooter;
             font-size: $textXxs;
         }
     }
