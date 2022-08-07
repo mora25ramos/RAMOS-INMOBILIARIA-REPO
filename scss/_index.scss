@@ -7,10 +7,28 @@
     .index-contenedor-img {
         height: $h-0;
         width: $w-0;
+        @include lg{
+            height: 620px;
+            width: $a;
+            overflow: $a;
+            margin-bottom: 20px;
+        }
+        @include xl{
+            height: 690px;
+            width: $a;
+            overflow: $a;
+            margin-bottom: 25px;
+        }
+        @include xxl{
+            height: 720px;
+            width: $a;
+            overflow: $a;
+            margin-bottom: 30px;
+        }
         cursor: pointer;
         img {
-            height: $h-0;
-            width: $w-0;
+            height: $h-100; 
+            width: $w-100;
         }
     }
     .index-contenedor-titulo {
