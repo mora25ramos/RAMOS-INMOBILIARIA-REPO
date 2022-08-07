@@ -12,9 +12,7 @@
     margin: $a;
     width: $a;
     .mapa-contacto {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include d-flex ($center, $center);
         padding: 25px 0px;
         iframe {
             width: 700px;
