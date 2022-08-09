@@ -51,7 +51,7 @@ li {
 }
 
 h1 {
-    @include texto ($fontMain, $textLg);
+    @include texto ($fontMain, $textMd);
     font-weight: $textBold;
     @include lg{
         font-size: $textXl;
@@ -59,18 +59,19 @@ h1 {
 }
 
 h2 {
-    @include texto ($fontMain, $textMd);
+    @include texto ($fontMain, $textSm);
     @include lg{
         font-size: $textLg;
     }
 }
 
 h3 {
-    @include texto ($fontMain, $textSm);
+    @include texto ($fontMain, $textPxl);
     @include lg{
         font-size: $textMd;
     }
 }
+
 
 p {
     @include texto ($fontMain, $textXxs);
@@ -91,13 +92,13 @@ p {
 .font-size {
     @include texto ($fontMain, $textXxss);
     @include lg{
-        font-size: $textXxs;
-    }
-    @include xl{
         font-size: $textXs;
     }
-    @include xxl{
+    @include xl{
         font-size: $textSm;
+    }
+    @include xxl{
+        font-size: $textMd;
     }
 }
 
