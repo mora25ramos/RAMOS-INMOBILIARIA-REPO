@@ -1,5 +1,6 @@
 /*Pàg Tasaciones*/
 .contenedor-hr-tasaciones{
+    margin: $a;
     @include d-flex ($center, $center);
     hr{
         width: 80%;
@@ -10,13 +11,13 @@
 .icono-tasaciones {
     width: $a;
     height: 65px;
-    margin-top: 15px;
+    margin-top: 10px;
  }
 
 .contenedor-form-tasaciones {
     margin-bottom: 45px;
-    margin-right: 35px;
-    margin-left: 35px;
+    margin-right: 10%;
+    margin-left: 10%;
     padding: 10px;
     color: $gris;
     .btn-bg {
