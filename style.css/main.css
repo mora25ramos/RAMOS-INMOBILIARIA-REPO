@@ -75,7 +75,7 @@ li {
 
 h1 {
   font-family: "Open Sans", sans-serif;
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight: 800;
 }
 @media (min-width: 700px) and (max-width: 999px) {
@@ -86,7 +86,7 @@ h1 {
 
 h2 {
   font-family: "Open Sans", sans-serif;
-  font-size: 1.5em;
+  font-size: 1em;
 }
 @media (min-width: 700px) and (max-width: 999px) {
   h2 {
@@ -96,7 +96,7 @@ h2 {
 
 h3 {
   font-family: "Open Sans", sans-serif;
-  font-size: 1em;
+  font-size: 1.2em;
 }
 @media (min-width: 700px) and (max-width: 999px) {
   h3 {
@@ -135,17 +135,17 @@ p {
 }
 @media (min-width: 700px) and (max-width: 999px) {
   .font-size {
-    font-size: 0.6em;
+    font-size: 0.7em;
   }
 }
 @media (min-width: 1000px) and (max-width: 1199px) {
   .font-size {
-    font-size: 0.7em;
+    font-size: 1em;
   }
 }
 @media (min-width: 1200px) and (max-width: 1400px) {
   .font-size {
-    font-size: 1em;
+    font-size: 1.5em;
   }
 }
 
@@ -243,8 +243,8 @@ p {
 }
 
 /*margins*/
-.m-25 {
-  margin: 25px;
+.m-5 {
+  margin: 5%;
 }
 
 /* NAV */
@@ -412,6 +412,7 @@ p {
 /*Fin Pàg Contacto*/
 /*Pàg Tasaciones*/
 .contenedor-hr-tasaciones {
+  margin: auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -424,13 +425,13 @@ p {
 .icono-tasaciones {
   width: auto;
   height: 65px;
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
 .contenedor-form-tasaciones {
   margin-bottom: 45px;
-  margin-right: 35px;
-  margin-left: 35px;
+  margin-right: 10%;
+  margin-left: 10%;
   padding: 10px;
   color: #999897;
 }
@@ -448,27 +449,43 @@ p {
   background-size: cover;
 }
 #propiedadesBody .contenedor-props {
-  display: grid;
-  grid-template-columns: 22% 78%;
-  grid-template-rows: repeat(2, auto);
-  grid-template-areas: "aside titulo" "aside props";
+  display: flex;
+  flex-flow: column nowrap;
+}
+@media (min-width: 540px) and (max-width: 699px) {
+  #propiedadesBody .contenedor-props {
+    display: grid;
+    grid-template-columns: 22% 78%;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "aside titulo" "aside props";
+  }
+}
+#propiedadesBody .contenedor-props .titulo-props {
+  grid-area: "titulo";
+  margin: 5%;
 }
 #propiedadesBody .contenedor-props #filtros {
-  background-color: #e2dbd4;
+  background-color: rgb(236, 228, 228);
   font-size: 0.7em;
-  padding-top: 40px;
-  padding-left: 5px;
+  padding: 20px 10px;
   grid-area: "aside";
+}
+#propiedadesBody .contenedor-props #filtros h3 {
+  text-align: center;
+  font-weight: 800;
 }
 #propiedadesBody .contenedor-props #mainProps {
   display: flex;
   flex-flow: column nowrap;
-}
-#propiedadesBody .contenedor-props #mainProps .titulo-props {
-  grid-area: "titulo";
+  margin: 20px;
 }
 #propiedadesBody .contenedor-props #mainProps .props-cards {
   grid-area: "props";
+}
+#propiedadesBody .contenedor-props #mainProps .props-cards .card-propiedades {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Fin pág Props, Alq y Ventas*/
