@@ -54,7 +54,15 @@ h1 {
     @include texto ($fontMain, $textMd);
     font-weight: $textBold;
     @include lg{
+        font-size: $textLg;
+    }
+    @include xl{
         font-size: $textXl;
+        font-weight: $textBolder;
+    }
+    @include xxl{
+        font-size: $textXl;
+        font-weight: $textBolder;
     }
 }
 
@@ -108,7 +116,7 @@ p {
 /* HEADER */
 #header {
     display: flex;
-    grid-area: "header";
+    grid-area: header;
     background-color: $white;
     div {
         width: $a;
@@ -134,7 +142,7 @@ p {
 
 /*FOOTER*/
 #pie {
-    grid-area: "footer";
+    grid-area: footer;
     overflow: hidden;
     background-color: $secondaryColor;    
     .index-contenedor-footer {
