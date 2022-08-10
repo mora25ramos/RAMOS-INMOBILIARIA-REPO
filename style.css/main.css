@@ -80,7 +80,19 @@ h1 {
 }
 @media (min-width: 700px) and (max-width: 999px) {
   h1 {
+    font-size: 2em;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1199px) {
+  h1 {
     font-size: 2.5em;
+    font-weight: 900;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1400px) {
+  h1 {
+    font-size: 2.5em;
+    font-weight: 900;
   }
 }
 
@@ -153,7 +165,7 @@ p {
 /* HEADER */
 #header {
   display: flex;
-  grid-area: "header";
+  grid-area: header;
   background-color: rgb(245, 245, 245);
 }
 #header div {
@@ -177,7 +189,7 @@ p {
 /*Fin Header*/
 /*FOOTER*/
 #pie {
-  grid-area: "footer";
+  grid-area: footer;
   overflow: hidden;
   background-color: rgb(138, 28, 39);
 }
@@ -249,7 +261,7 @@ p {
 
 /* NAV */
 #nav {
-  grid-area: "nav";
+  grid-area: nav;
 }
 #nav:hover {
   cursor: pointer;
@@ -452,37 +464,51 @@ p {
   display: flex;
   flex-flow: column nowrap;
 }
-@media (min-width: 540px) and (max-width: 699px) {
+@media (min-width: 700px) and (max-width: 999px) {
   #propiedadesBody .contenedor-props {
     display: grid;
     grid-template-columns: 22% 78%;
-    grid-template-rows: repeat(2, auto);
-    grid-template-areas: "aside titulo" "aside props";
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: "header header" "nav nav" "aside titulo" "aside props" "footer footer";
+  }
+}
+@media (min-width: 1000px) and (max-width: 1199px) {
+  #propiedadesBody .contenedor-props {
+    display: grid;
+    grid-template-columns: 24% 76%;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: "header header" "nav nav" "aside titulo" "aside props" "footer footer";
+  }
+}
+@media (min-width: 1200px) and (max-width: 1400px) {
+  #propiedadesBody .contenedor-props {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: "header header" "nav nav" "aside titulo" "aside props" "footer footer";
   }
 }
 #propiedadesBody .contenedor-props .titulo-props {
-  grid-area: "titulo";
+  grid-area: titulo;
   margin: 5%;
 }
 #propiedadesBody .contenedor-props #filtros {
   background-color: rgb(236, 228, 228);
   font-size: 0.7em;
   padding: 20px 10px;
-  grid-area: "aside";
+  grid-area: aside;
 }
 #propiedadesBody .contenedor-props #filtros h3 {
   text-align: center;
   font-weight: 800;
 }
 #propiedadesBody .contenedor-props #mainProps {
-  display: flex;
-  flex-flow: column nowrap;
+  grid-area: props;
   margin: 20px;
 }
-#propiedadesBody .contenedor-props #mainProps .props-cards {
-  grid-area: "props";
-}
 #propiedadesBody .contenedor-props #mainProps .props-cards .card-propiedades {
+  display: flex;
+  flex-flow: column nowrap;
   display: flex;
   align-items: center;
   justify-content: center;
