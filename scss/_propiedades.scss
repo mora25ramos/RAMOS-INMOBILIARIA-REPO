@@ -9,36 +9,62 @@
     .contenedor-props{ 
         display: flex;
         flex-flow: column nowrap;
-        @include md{
+        @include lg{
             display: grid;
             grid-template-columns: 22% 78%;
-            grid-template-rows: repeat(2, auto);
+            grid-template-rows: repeat(5, auto);
             grid-template-areas: 
+            "header header"
+            "nav nav"
             "aside titulo"
-            "aside props";
+            "aside props"
+            "footer footer";
+        }
+        @include xl{
+            display: grid;
+            grid-template-columns: 24% 76%;
+            grid-template-rows: repeat(5, auto);
+            grid-template-areas: 
+            "header header"
+            "nav nav"
+            "aside titulo"
+            "aside props"
+            "footer footer";
+        }
+        @include xxl{
+            display: grid;
+            grid-template-columns: 25% 75%;
+            grid-template-rows: repeat(5, auto);
+            grid-template-areas: 
+            "header header"
+            "nav nav"
+            "aside titulo"
+            "aside props"
+            "footer footer";
         }
         .titulo-props  {
-            grid-area: "titulo";
+            grid-area: titulo;
             margin: 5%;
         } 
         #filtros  {
             background-color: $perla;
             font-size: $textXs;
             padding: 20px 10px;
-            grid-area: "aside";
+            grid-area: aside;
             h3 {
                 text-align: center;
                 font-weight: $textBold;
             }
         }
         #mainProps {
-            display: flex;
-            flex-flow: column nowrap;
+            grid-area: props;
             margin: 20px;  
             .props-cards  {
-                grid-area: "props";
                 .card-propiedades {
+                    display: flex;
+                    flex-flow: column nowrap;
                     @include d-flex ($center, $center);
+
                 }
             }
         }
