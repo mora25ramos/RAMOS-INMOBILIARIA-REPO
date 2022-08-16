@@ -73,10 +73,14 @@ li {
   width: 11em;
 }
 
+.carrusel-props-destacados {
+  height: 12em;
+}
+
 h1 {
   font-family: "Open Sans", sans-serif;
   font-size: 1.5em;
-  font-weight: 800;
+  font-weight: 900;
 }
 @media (min-width: 700px) and (max-width: 999px) {
   h1 {
@@ -99,8 +103,19 @@ h1 {
 h2 {
   font-family: "Open Sans", sans-serif;
   font-size: 1em;
+  font-weight: 800;
 }
 @media (min-width: 700px) and (max-width: 999px) {
+  h2 {
+    font-size: 2em;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1199px) {
+  h2 {
+    font-size: 2em;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1400px) {
   h2 {
     font-size: 2em;
   }
@@ -361,19 +376,11 @@ p {
   padding-top: 35px;
 }
 #main .index-contenedor-destacados h2 {
-  font-weight: 800;
   padding-bottom: 10px;
   margin: 0px 25px;
 }
 #main .index-contenedor-destacados #cards {
-  margin: 30px 35px;
-}
-#main .index-contenedor-destacados #cards .propiedades {
-  height: 10rem;
-  width: 12rem;
-}
-#main .index-contenedor-destacados #cards .margin-card {
-  margin-top: 15px;
+  margin: 30px 20px;
 }
 #main .index-contenedor-destacados #cards .whole-card {
   margin-bottom: 20px;
