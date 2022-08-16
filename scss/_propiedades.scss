@@ -40,7 +40,7 @@
             "nav nav"
             "aside titulo"
             "aside props"
-            "footer footer";
+            "footer footer"; 
         }
         .titulo-props  {
             grid-area: titulo;
@@ -64,7 +64,6 @@
                     display: flex;
                     flex-flow: column nowrap;
                     @include d-flex ($center, $center);
-
                 }
             }
         }
