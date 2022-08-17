@@ -513,42 +513,42 @@ p {
   grid-area: props;
   margin: 20px;
 }
-#propiedadesBody .contenedor-props #mainProps .props-cards .card-propiedades {
+#propiedadesBody .contenedor-props #mainProps #cards {
+  margin-bottom: 20px;
+}
+#propiedadesBody .contenedor-props #mainProps #cards .card-propiedades {
   display: flex;
   flex-flow: column nowrap;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
-/* Fin pág Props, Alq y Ventas*/
-/*Pag error 404*/
-.wrapper {
+#propiedadesBody .contenedor-props #mainProps #cards .wrapper {
   width: 80%;
   margin: 0 auto;
   position: relative;
 }
-.wrapper:hover {
+#propiedadesBody .contenedor-props #mainProps #cards .wrapper:hover {
   opacity: 0.8;
   background-color: #555454;
 }
-.wrapper:hover img {
+#propiedadesBody .contenedor-props #mainProps #cards .wrapper:hover img {
   opacity: 0.8;
 }
-.wrapper:hover .overlay {
+#propiedadesBody .contenedor-props #mainProps #cards .wrapper:hover .overlay {
   opacity: 1;
 }
-.wrapper img {
+#propiedadesBody .contenedor-props #mainProps #cards .wrapper img {
   opacity: 1;
   display: block;
   width: 100%;
-  height: auto;
+  height: 180px;
   transition: 0.5s ease;
 }
-.wrapper .overlay {
+#propiedadesBody .contenedor-props #mainProps #cards .wrapper .overlay {
   opacity: 0;
 }
-.wrapper .overlay .content {
+#propiedadesBody .contenedor-props #mainProps #cards .wrapper .overlay .content {
   position: absolute;
   top: 45%;
   left: 50%;
@@ -560,5 +560,8 @@ p {
   white-space: nowrap;
   overflow: hidden;
 }
+
+/* Fin pág Props, Alq y Ventas*/
+/*Pag error 404*/
 
 /*# sourceMappingURL=main.css.map */
