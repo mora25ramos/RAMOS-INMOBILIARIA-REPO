@@ -1,0 +1,39 @@
+/*Pag error 404*/
+
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    &:hover {
+        opacity: .8;
+        background-color: $gris-oscuro;
+    }
+    &:hover img{
+        opacity: .8;
+    }
+    &:hover .overlay{
+        opacity: 1;
+    }
+    img {
+        opacity: 1;
+        display: block;
+        width: $w-100;
+        height: $a;
+        transition: .5s ease;
+    }
+    .overlay {
+        opacity: 0;
+        .content {
+            position: absolute;
+            top: 45%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            text-transform: uppercase;
+            font-size: 20px;
+            color: $white;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+    }
+ }
