@@ -45,11 +45,6 @@ li {
 
 .pointer {cursor: pointer;}
 
-.propiedades  {
-    height: 12em;
-    width: 11em;
-}
-
 .carrusel-props-destacados {
     height: 12em;
 }
@@ -93,9 +88,9 @@ h3 {
 
 
 p {
-    @include texto ($fontMain, $textXxs);
+    @include texto ($fontMain, $textXs);
     @include sm{
-        font-size: $textXs;
+        font-size: $textSm;
     }
     @include lg{
         font-size: $textSm;
@@ -142,6 +137,9 @@ p {
                 .iconosHeader {
                     width: 14px;
                     height: 12px;
+                }
+                p {
+                    font-size: $textXxs;
                 }
             } 
         } 
