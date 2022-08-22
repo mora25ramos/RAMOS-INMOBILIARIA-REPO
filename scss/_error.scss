@@ -1,74 +1,77 @@
 /*Pag error 404*/
 
 .error-body {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: 
-    "titulo"
-    "subtitulo"
-    "imagen" 
-    "button";
-    @include xl{
-        grid-template-columns: 2fr;
-        grid-template-rows: 3fr;
-        grid-template-areas: 
-        "imagen titulo"
-        "imagen subtitulo"
-        "imagen button"; 
-    }
-    @include xxl{
-        grid-template-columns: 55% 45%;
-        grid-template-rows: 3fr;
-        grid-template-areas: 
-        "imagen titulo"
-        "imagen subtitulo"
-        "button button";  
-    }
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
     //Container de todo
     .container-error {
-        margin: 75px;
+        margin: 50px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        @include xl{
+            display: grid;
+            grid-template-columns: 2fr;
+            grid-template-rows: $a;
+            grid-template-areas: 
+            "texto imagen"
+            "texto imagen"
+            "button button"; 
+        }
+        @include xxl{
+            display: grid;
+            grid-template-columns: 2fr;
+            grid-template-rows: $a;
+            grid-template-areas: 
+            "texto imagen"
+            "texto imagen"
+            "button button";  
+        }
+        
         //Primer Section
         .container-error-texto {
-            margin: 70px;
+            margin: 40px;
+            grid-area: texto;
             @include lg {
-            margin: 120px 80px;
+                margin: 120px 80px;
+            }
+            @include xxl {
+                margin: 120px 0px;
             }
             
             //Sub-section nº1
             .error-titulo {
-                grid-area: titulo;
-                @include d-flex ($center,$center);
                 color: rgb(9, 51, 105);
                 font-weight: 800;
                 font-size: larger;
+                text-align: center;
                 margin-bottom: 15px;
                 @include lg {
+                    font-size: 1.9em;
+                    margin-bottom: 22px;
+                }
+                @include xl{
                     font-size: 2em;
                     margin-bottom: 25px;
                 }
-                @include xl{
-                    font-size: 2.2em;
-                    margin-bottom: 35px;
-                }
                 @include xxl{
-                    font-size: 2.5em; 
-                    margin-bottom: 40px;
+                    font-size: 1.8em; 
+                    margin-bottom: 30px;
                 }
             }
             //Sub-section nº2
             .error-subtitulo {
-                grid-area: subtitulo;
-                @include d-flex ($center,$center);
+                text-align: center;
                 @include lg {
-                    font-size: 1.3em;
+                    font-size: 1.2em;
                 }
                 @include xl{
-                    font-size: 1.5em;
+                    font-size: 1.3em;
                 }
                 @include xxl{
-                    font-size: 1.8em; 
+                    font-size: 1.4em; 
                 }
             }
         }
@@ -80,16 +83,16 @@
             //Sub-section nº1
             img {
                 @include lg {
-                    width: 390px;
-                    height: 390px;
+                    width: 400px;
+                    height: 405px;
                 }
                 @include xl{
-                    width: 300px;
-                    height: 300px;
+                    width: 410px;
+                    height: 415px;
                 }
                 @include xxl{
-                    width: 310px;
-                    height: 310px; 
+                    width: 415px;
+                    height: 420px; 
                 } 
             }
         }
@@ -97,22 +100,49 @@
         .container-error-button {
             grid-area: button;
             padding-bottom: 30px;
+            width: $a;
             @include lg {
-                width: 390px;
                 padding-bottom: 60px;
             }
-            @include xl{
-                width: 400px;
-                padding-bottom: 70px;
-            }
-            @include xxl{
-                width: 420px;
-                padding-bottom: 80px;
-            }
+            
             a {
-                @include d-flex ($center,$center);
+                text-align: center;
                 margin: 20px 55px;
-                font-weight: 500;
+                font-weight: $textBold;
+                color: rgb(6, 28, 56);
+                //Box sadow generator
+                box-shadow: 15px 15px 10px 4px rgba(25, 25, 26, 0.71);
+                -webkit-box-shadow: 9px 9px 5px 1px rgba(26, 26, 27, 0.71);
+                -moz-box-shadow: 9px 9px 5px 1px rgba(14, 14, 15, 0.71);
+                //Animation
+                animation: myAnim 2.5s linear 0s infinite normal forwards;
+                @keyframes myAnim {
+                    0%,
+                    100% {
+                        transform: translateX(0);
+                    }
+                
+                    10%,
+                    30%,
+                    50%,
+                    70% {
+                        transform: translateX(-10px);
+                    }
+                
+                    20%,
+                    40%,
+                    60% {
+                        transform: translateX(10px);
+                    }
+                
+                    80% {
+                        transform: translateX(8px);
+                    }
+                
+                    90% {
+                        transform: translateX(-8px);
+                    }
+                }
                 @include lg {
                     font-size: 1.5em;
                 }
@@ -121,6 +151,11 @@
                 }
                 @include xxl{
                     font-size: 1.7em; 
+                }
+                &:hover {
+                    opacity: .4;
+                    background-color: rgb(16, 77, 156);
+                    color: $white;
                 }
             }   
         }
