@@ -12,7 +12,7 @@
         @include lg{
             display: grid;
             grid-template-columns: 22% 78%;
-            grid-template-rows: repeat(5, auto);
+            grid-template-rows: repeat(5, $a);
             grid-template-areas: 
             "header header"
             "nav nav"
@@ -23,7 +23,7 @@
         @include xl{
             display: grid;
             grid-template-columns: 24% 76%;
-            grid-template-rows: repeat(5, auto);
+            grid-template-rows: repeat(5, $a);
             grid-template-areas: 
             "header header"
             "nav nav"
@@ -34,7 +34,7 @@
         @include xxl{
             display: grid;
             grid-template-columns: 25% 75%;
-            grid-template-rows: repeat(5, auto);
+            grid-template-rows: repeat(5, $a);
             grid-template-areas: 
             "header header"
             "nav nav"
@@ -69,7 +69,7 @@
                 }
                 .wrapper {
                     width: 80%;
-                    margin: 0 auto;
+                    margin: 0 $a;
                     position: relative;
                     &:hover {
                         opacity: .8;
@@ -84,25 +84,10 @@
                     img {
                         opacity: 1;
                         display: block;
-                        width: $w-100;
-                        height: 130px;
+                        width: 90%;
+                        height: 180px;
                         transition: .5s ease;
-                        @include sm{
-                            height: 135px;
-                        } 
-                        @include md{
-                            height: 140px;
-                        }
-                        @include lg{
-                            height: 150px;
-                        }
-                        @include xl{
-                            height: 180px; 
-                        }
-                        @include xxl{
-                            height: 200px;   
-                        }
-                    }
+                    }  
 
                     .overlay {
                         opacity: 0;
