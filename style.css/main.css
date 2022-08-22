@@ -198,6 +198,21 @@ p {
 #header div ul li p {
   font-size: 0.6em;
 }
+@media (min-width: 700px) and (max-width: 999px) {
+  #header div ul li p {
+    font-size: 0.7em;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1199px) {
+  #header div ul li p {
+    font-size: 1em;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1400px) {
+  #header div ul li p {
+    font-size: 1em;
+  }
+}
 
 /*Fin Header*/
 /*FOOTER*/
