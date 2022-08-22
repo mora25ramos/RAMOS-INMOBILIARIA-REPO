@@ -140,6 +140,15 @@ p {
                 }
                 p {
                     font-size: $textXxs;
+                    @include lg{
+                        font-size: $textXs;
+                    }
+                    @include xl{
+                        font-size: $textSm;
+                    }
+                    @include xxl{
+                        font-size: $textSm;
+                    }
                 }
             } 
         } 
