@@ -56,7 +56,7 @@
         <!-- Inicia la Nav -->
         <nav class="navbar navbar-expand-lg bg-light justify-content align-items sticky-top" id="nav">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">
+                <a class="navbar-brand" href="../index.html">
                     <img src= "../img/Iconos/Logos UGARTE/logougarte.jpg" 
                         alt="Logo de la firma. Dice UGARTE Propiedades en blanco y el fondo es color bordó" 
                         class="logo-nav-medidas">
@@ -110,7 +110,7 @@
                     <section>
                     <!-- form Bootstrap -->
                         <div class="row">
-                            <div class="col-12">
+                            <div class="col-12 mb-2 mt-1">
                                 <select class="form-select pointer" aria-label="Default select example">
                                     <option selected>Tipo de operacion</option>
                                     <option value="1">Venta</option>
@@ -118,7 +118,7 @@
                                     <option value="3">Alquiler temporario</option>
                                 </select>
                             </div>
-                            <div class="col-12"> 
+                            <div class="col-12 mb-2"> 
                                 <select class="form-select pointer" aria-label="Default select example">
                                     <option selected>Tipo de propiedad</option>
                                     <option value="1">Terreno</option>
@@ -130,7 +130,7 @@
                                     <option value="7">PH</option>
                                 </select>
                             </div>
-                            <div class="col-12">
+                            <div class="col-12 mb-2">
                                 <select class="form-select pointer" aria-label="Default select example">
                                     <option selected>Zona</option>
                                     <option value="1">CABA</option>
@@ -138,7 +138,7 @@
                                     <option value="3">Otros</option>
                                 </select>
                             </div>
-                            <div class="col-12">
+                            <div class="col-12 mb-2">
                                 <select class="form-select pointer" aria-label="Default select example">
                                     <option selected>Barrio</option>
                                     <option value="1">Almagro</option>
@@ -188,7 +188,7 @@
                                 </select>
                             </div>
                                 
-                            <div class="col-12">
+                            <div class="col-12 mb-1">
                                 <select class="form-select pointer" aria-label="Default select example">
                                     <option selected>Ambientes</option>
                                     <option value="1">1 Ambiente</option>
@@ -211,215 +211,388 @@
                 <main id="mainProps">
 
                     <!-- bootstrap cards-->
-                    <div id="props-cards" class="row text-center" id="cards">
+                    <div class="row text-center" id="cards">
 
-                        <div class="col-sm-6 col-lg-4">
-                        <div class="card">
-                                <div class="card-propiedades">
-                                    <img src="../img/Propiedades/Venta/casa.pedernera1900.2.jpg" class="propiedades card-img-top" alt="La imagen muestra una Casa a la venta en Villa Adelina, puede pulsar el botón debajo que dice Más Info para conocerla">
+                        <!-- Card n°1-->
+                        <div class="col-sm-6 col-lg-4 mt-4">
+                            <div class="card">
+                                <div class="wrapper card-propiedades">
+                                    <img src="../img/Propiedades/Venta/casa.pedernera1900.2.jpg" class="propiedades" alt="La imagen muestra una Casa a la venta en Villa Adelina, puede pulsar el botón debajo que dice Más Info para conocerla">
+                                    <div class="overlay"> 
+                                        <div class="content">
+                                            7amb | 283m2 
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="card-body">
-                                    <h5 class="card-title">Pedernera 1900</h5>
-                                    <p class="card-text">U$D400.000</p>
-                                    <a href="https://www.zonaprop.com.ar/propiedades/excelente-propiedad-los-castanos-48287642.html" target="_blank" class="btn btn-primary">Más info.</a>
+                                    <h5 class="card-title">Villa Adelina</h5>
+                                    <p>Pedernera 1900</p>
+                                    <p>U$D400.000</p>
+                                    <a href="https://www.zonaprop.com.ar/propiedades/imponente-chalet-47391963.html" target="_blank" class="btn btn-primary">Más info.</a>
                                 </div>
+                            </div>
                         </div>
+
+                        <!-- Card nº2-->
+                        <div class="col-sm-6 col-lg-4 mt-4">
+                            <div class="card">
+                                <div class="wrapper card-propiedades">
+                                    <img src="../img/Propiedades/Alquiler/alq.dardorocha.jpg" class="propiedades" alt="La imagen muestra una casa familiar en alquiler en Acassuso, San Isidro. Para más info puede pulsar el botón de abajo que lo redirigirá a nuestra página de Zonaprop">
+                                    <div class="overlay"> 
+                                        <div class="content">
+                                            4amb | 220m2 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h5>Acassuso</h5>
+                                    <p>Dardo Rocha</p>
+                                    <p>$330.000</p>
+                                    <a href="https://www.zonaprop.com.ar/propiedades/impecable-3-dorm-s-dardo-rocha-martinez-41281911.html" target="_blank" class="btn btn-primary">Más info.</a>
+                                </div>
+                            </div>
                         </div>
                         
-                        <div class="col-sm-6 col-lg-4">
+                         <!-- Card n°3-->
+                        <div class="col-sm-6 col-lg-4 mt-4">
                             <div class="card">
-                                <div class="card-propiedades">
-                                    <img src="../img/Propiedades/Venta/casa.santaclara.pablo.jpg" class="propiedades card-img-top" alt="La imagen muestra una Casa en Barrio Cerrado Santa Clara, para más info puede pulsar el botón de abajo">
+                                <div class="wrapper card-propiedades">
+                                    <img src="../img/Propiedades/Venta/casa.santaclara.pablo.jpg" class="propiedades" alt="La imagen muestra una Casa en Barrio Cerrado Santa Clara, para más info puede pulsar el botón de abajo">
+                                    <div class="overlay"> 
+                                        <div class="content">
+                                            6amb | 510m2 
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="card-body">
-                                    <h5 class="card-title"> BC "Santa Clara</h5>
-                                    <p class="card-text">U$500.000</p>
-                                    <a href="https://www.zonaprop.com.ar/propiedades/excelente-propiedad-los-castanos-48287642.html" target="_blank" class="btn btn-primary">Más info.</a>
+                                    <h5 class="card-title"> Victoria</h5>
+                                    <p>Santa Clara</p>
+                                    <p>U$500.000</p>
+                                    <a href="https://www.zonaprop.com.ar/propiedades/muy-linda-y-amplia-48956962.html" target="_blank" class="btn btn-primary">Más info.</a>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-sm-6 col-lg-4">
+                        <!-- Card n°4-->
+                        <div class="col-sm-6 col-lg-4 mt-4">
                             <div class="card">
-                                <div class="card-propiedades">
-                                    <img src="../img/Propiedades/Venta/casa.barreiroaguirre4000.jpg" class="propiedades card-img-top" alt="La imagen muestra una Casa en Olivos, para más info puede pulsar el botón de abajo que lo redirigirá a nuestra página de Zonaprop">
+                                <div class="wrapper card-propiedades">
+                                    <img src="../img/Propiedades/Venta/casa.barreiroaguirre4000.jpg" class="propiedades" alt="La imagen muestra una Casa en Olivos, para más info puede pulsar el botón de abajo que lo redirigirá a nuestra página de Zonaprop">
+                                    <div class="overlay"> 
+                                        <div class="content">
+                                            6amb | 160m2 
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="card-body">
-                                    <h5 class="card-title">Olivos</h5>
-                                    <h6 class="card-title text-light"> Barreiro Aguirre 4000 </h6>
-                                    <p class="card-text">U$D315.000</p>
-                                    <a href="https://www.zonaprop.com.ar/propiedades/excelente-propiedad!-48378680.html" target="_blank" class="btn btn-primary">Más info.</a>
+                                    <h5 class="card-title">Olivos</h5> 
+                                    <p>Barreiro Aguirre 4000</p>
+                                    <p>U$D315.000</p>
+                                    <a href="https://www.zonaprop.com.ar/propiedades/amplia-y-solida-casa-en-olivos-43480376.html" target="_blank" class="btn btn-primary">Más info.</a>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-sm-6 col-lg-4">
+                        <!-- Card nº5-->
+                        <div class="mt-4 col-sm-6 col-lg-4">
                             <div class="card">
-                                <div class="card-propiedades">
-                                    <img src="../img/Propiedades/Alquiler/local.libertador.webp" class="propiedades card-img-top" alt="La imagen muestra un Local Av del Libertador, zona Martínez, , para más info puede pulsar el botón de abajo que lo redirigirá a nuestra página de Zonaprop">
+                                <div class="wrapper card-propiedades">
+                                    <img src="../img/Propiedades/Alquiler/libertador800.webp" class="propiedades" alt="La imagen muestra un local en alquiler sobre Av del Libertador, zona Martínez. Para más info puede pulsar el botón de abajo que lo redirigirá a nuestra página de Zonaprop">
+                                    <div class="overlay"> 
+                                        <div class="content">
+                                            1amb | 24m2 
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="card-body">
-                                    <h5 class="card-title">Martínez</h5>
-                                    <h6 class="card-title text-light"> Av del Libertador </h6>
-                                    <p class="card-text">$220.000</p>
-                                    <a href="https://www.zonaprop.com.ar/propiedades/excelente-casa-6-amb-florida-vte-lopez-49484327.html" target="_blank" class="btn btn-primary">Más info.</a>
+                                    <h5 class="card-title">San Fernando</h5>
+                                    <p> Libertador 800 </p>
+                                    <p>$50.000</p>
+                                    <a href="https://www.zonaprop.com.ar/propiedades/pintoresco!-av-del-libertador-800-50036095.html" target="_blank" class="btn btn-primary">Más info.</a>
                                 </div>
                             </div>
                         </div>
                     
-                        <div class="col-sm-6 col-lg-4">
+                        <!-- Card n°6-->
+                        <div class="col-sm-6 col-lg-4 mt-4">
                             <div class="card">
-                                <div class="card-propiedades">
-                                    <img src="../img/Propiedades/Venta/casa.juandegaray2000.jpg" class="propiedades card-img-top" alt="La imagen muestra una Casa en Olivos, para más info puede pulsar el botón de abajo que lo redirigirá a nuestra página de Zonaprop">
+                                <div class="wrapper card-propiedades">
+                                    <img src="../img/Propiedades/Venta/casa.juandegaray2000.jpg" class="propiedades" alt="La imagen muestra una Casa en Olivos, para más info puede pulsar el botón de abajo que lo redirigirá a nuestra página de Zonaprop">
+                                    <div class="overlay"> 
+                                        <div class="content">
+                                            5amb | 280m2 
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="card-body">
                                     <h5 class="card-title">Olivos</h5>
-                                    <h6 class="card-title text-light"> Juan de Garay 2000 </h6>
-                                    <p class="card-text">U$D520.000</p>
+                                    <p>Juan de Garay 2000</p>
+                                    <p>U$D520.000</p>
+                                    <a href="https://www.zonaprop.com.ar/propiedades/chalet-m-av-maipu-y-m.-quinta-presidencial-47339654.html" target="_blank" class="btn btn-primary">Más info.</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card nº7-->
+                        <div class="mt-4 col-sm-6 col-lg-4">
+                            <div class="card">
+                                <div class="wrapper card-propiedades">
+                                    <img src="../img/Propiedades/Alquiler/rosetti3905.jpg" class="propiedades" alt="La imagen muestra una oficina en alquiler, zona Olivos, para más info puede pulsar el botón de abajo que lo redirigirá a nuestra página de Zonaprop">
+                                    <div class="overlay"> 
+                                        <div class="content">
+                                            2amb | 50m2 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Olivos</h5>
+                                    <p> Rosetti 3905 </p>
+                                    <p>$45.000</p>
+                                    <a href="https://www.zonaprop.com.ar/propiedades/consultorio-p.-b.-c-patio-parr-unicenter-48952890.html" target="_blank" class="btn btn-primary">Más info.</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card n°8-->
+                        <div class="col-sm-6 col-lg-4 mt-4">
+                            <div class="card">
+                                <div class="wrapper card-propiedades">
+                                    <img src="../img/Propiedades/Venta/casa-loscastaños.jpg" class="propiedades" alt="La imagen muestra una Casa en Barrio Cerrado Los Castaños, para más info puede pulsar el botón de abajo que lo redirigirá a nuestra página de Zonaprop">
+                                    <div class="overlay"> 
+                                        <div class="content">
+                                            5amb | 500m2 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Nordelta</h5>
+                                    <p>Los Castaños</p>
+                                    <p>U$D390.000</p>
+                                    <a href="https://www.zonaprop.com.ar/propiedades/excelente-propiedad-los-castanos-48287642.html" target="_blank" class="btn btn-primary">Más info.</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card nº9-->
+                        <div class="mt-4 col-sm-6 col-lg-4">
+                            <div class="card">
+                                <div class="wrapper card-propiedades">
+                                    <img src="../img/Propiedades/Alquiler/galpon.avdeldirectorio5900.jpg" class="propiedades" alt="La imagen muestra un galpón en alquiler sobre Av del Directorio. Para más info puede pulsar el botón de abajo que lo redirigirá a nuestra página de Zonaprop">
+                                    <div class="overlay"> 
+                                        <div class="content">
+                                            1amb | 8500m2 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Mtaderos</h5>
+                                    <p> Av del Directorio</p>
+                                    <p>U$D6.500</p>
+                                    <a href="https://www.zonaprop.com.ar/propiedades/unico!-deposito-galpon-de-8.500-m-sup2-44872663.html" target="_blank" class="btn btn-primary">Más info.</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card n°10-->
+                        <div class="col-sm-6 col-lg-4 mt-4">
+                            <div class="card">
+                                <div class="wrapper card-propiedades">
+                                    <img src="../img/Propiedades/Venta/casahugo.jpg" class="propiedades" alt="La imagen muestra una Casa en Florida, Vicente López. Para más info puede pulsar el botón de abajo que lo redirigirá a nuestra página de Zonaprop">
+                                    <div class="overlay"> 
+                                        <div class="content">
+                                            4amb | 420m2 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Florida</h5>
+                                    <p> Beiro 1100 </p>
+                                    <p>U$D 470.000</p>
+                                    <a href="https://www.zonaprop.com.ar/propiedades/excelente-casa-6-amb-florida-vte-lopez-49484327.html" target="_blank" class="btn btn-primary">Más info.</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card nº11-->
+                        <div class="mt-4 col-sm-6 col-lg-4">
+                            <div class="card">
+                                <div class="wrapper card-propiedades">
+                                    <img src="../img/Propiedades/Alquiler/local.libertador.webp" class="propiedades" alt="La imagen muestra un local comercial en alquiler sobre Av del Libertador. Para más info puede pulsar el botón de abajo que lo redirigirá a nuestra página de Zonaprop">
+                                    <div class="overlay"> 
+                                        <div class="content">
+                                            +3amb | 150m2 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Acassuso</h5>
+                                    <p>Av del Libertador</p>
+                                    <p>$220.000</p>
+                                    <a href="https://www.zonaprop.com.ar/propiedades/-reservado-amplio-local-excelente-ubicacion-45318111.html" target="_blank" class="btn btn-primary">Más info.</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card n°12-->
+                        <div class="col-sm-6 col-lg-4 mt-4">
+                            <div class="card">
+                                <div class="wrapper card-propiedades">
+                                    <img src="../img/Propiedades/Venta/casatalar.jpg" class="propiedades" alt="La imagen muestra una Casa en Barrio Cerrado Talar de Pacheco. Para más info puede pulsar el botón de abajo que lo redirigirá a nuestra página de Zonaprop">
+                                    <div class="overlay"> 
+                                        <div class="content">
+                                            8amb | 1650m2 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">General Pacheco</h5>
+                                    <p>Talar de Pacheco</p>
+                                    <p>U$D 990.000</p>
                                     <a href="https://www.zonaprop.com.ar/propiedades/excelente-propiedad!-48378680.html" target="_blank" class="btn btn-primary">Más info.</a>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-sm-6 col-lg-4">
+                        <!-- Card nº13-->
+                        <div class="mt-4 col-sm-6 col-lg-4">
                             <div class="card">
-                                <div class="card-propiedades">
-                                    <img src="../img/Propiedades/Venta/casa-loscastaños.jpg" class="propiedades card-img-top" alt="La imagen muestra una Casa en Barrio Cerrado Los Castaños, para más info puede pulsar el botón de abajo que lo redirigirá a nuestra página de Zonaprop">
-                                </div>
-                                <div class="card-body">
-                                    <h5 class="card-title">Barrio Cerrado</h5>
-                                    <h6 class="card-title text-light"> "Los Castaños" </h6>
-                                    <p class="card-text">U$D390.000</p>
-                                    <a href="https://www.zonaprop.com.ar/propiedades/excelente-casa-6-amb-florida-vte-lopez-49484327.html" target="_blank" class="btn btn-primary">Más info.</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-6 col-lg-4">
-                            <div class="card">
-                                <div class="card-propiedades">
-                                    <img src="../img/Propiedades/Alquiler/rosetti3905.jpg" class="propiedades card-img-top" alt="La imagen muestra una oficina en alquiler, zona Olivos, para más info puede pulsar el botón de abajo que lo redirigirá a nuestra página de Zonaprop">
+                                <div class="wrapper card-propiedades">
+                                    <img src="../img/Propiedades/Alquiler/rosetti.alq.2.webp" class="propiedades" alt="La imagen muestra una oficina en alquiler en Olivos, cerca de Unicenter. Para más info puede pulsar el botón de abajo que lo redirigirá a nuestra página de Zonaprop">
+                                    <div class="overlay"> 
+                                        <div class="content">
+                                            1amb | 25m2 
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="card-body">
                                     <h5 class="card-title">Olivos</h5>
-                                    <h6 class="card-title text-light"> Rosetti 3905 </h6>
-                                    <p class="card-text">$45.000</p>
-                                    <a href="https://www.zonaprop.com.ar/propiedades/excelente-casa-6-amb-florida-vte-lopez-49484327.html" target="_blank" class="btn btn-primary">Más info.</a>
+                                    <p> Rosetti 3905 </p>
+                                    <p>$55.000</p>
+                                    <a href="https://www.zonaprop.com.ar/propiedades/oficina-unicenter-parana-48728099.html" target="_blank" class="btn btn-primary">Más info.</a>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-sm-6 col-lg-4">
+                        <!-- Card n°14-->
+                        <div class="col-sm-6 col-lg-4 mt-4">
                             <div class="card">
-                                <div class="card-propiedades">
-                                    <img src="../img/Propiedades/Venta/casahugo.jpg" class="propiedades card-img-top" alt="La imagen muestra una Casa en Florida, Vicente López. Para más info puede pulsar el botón de abajo que lo redirigirá a nuestra página de Zonaprop">
-                                </div>
-                                <div class="card-body">
-                                    <h5 class="card-title">Florida, Vte López</h5>
-                                    <h6 class="card-title text-light"> Beiro 1100 </h6>
-                                    <p class="card-text">U$D 280.000</p>
-                                    <a href="https://www.zonaprop.com.ar/propiedades/excelente-casa-6-amb-florida-vte-lopez-49484327.html" target="_blank" class="btn btn-primary">Más info.</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-6 col-lg-4">
-                            <div class="card">
-                                <div class="card-propiedades">
-                                    <img src="../img/Propiedades/Venta/casatalar.jpg" class="propiedades card-img-top" alt="La imagen muestra una Casa en Barrio Cerrado Talar de Pacheco. Para más info puede pulsar el botón de abajo que lo redirigirá a nuestra página de Zonaprop">
-                                </div>
-                                <div class="card-body">
-                                    <h5 class="card-title">Barrio Cerrado</h5>
-                                    <h6 class="card-title text-light"> Talar de Pacheco </h6>
-                                    <p class="card-text">U$D 990.000</p>
-                                    <a href="https://www.zonaprop.com.ar/propiedades/excelente-casa-6-amb-florida-vte-lopez-49484327.html" target="_blank" class="btn btn-primary">Más info.</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-6 col-lg-4">
-                            <div class="card">
-                                <div class="card-propiedades">
-                                    <img src="../img/Propiedades/Venta/p.buenosaires3600.jpg" class="propiedades card-img-top" alt="La imagen muestra un PH - Buenos Aires 3600. Para más info puede pulsar el botón de abajo que lo redirigirá a nuestra página de Zonaprop">
-                                </div>
-                                <div class="card-body">
-                                    <h5 class="card-title">PH</h5>
-                                    <h6 class="card-title text-light"> Buenos Aires 3600 </h6>
-                                    <p class="card-text">U$D 490.000</p>
-                                    <a href="https://www.zonaprop.com.ar/propiedades/excelente-casa-6-amb-florida-vte-lopez-49484327.html" target="_blank" class="btn btn-primary">Más info.</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-6 col-lg-4">
-                            <div class="card">
-                                <div class="card-propiedades">
-                                    <img src="../img/Propiedades/Venta/depto.avcazon1000webp.webp" class="propiedades card-img-top" alt="La imagen muestra un Departamento en Tigre. Para más info puede pulsar el botón de abajo que lo redirigirá a nuestra página de Zonaprop">
+                                <div class="wrapper card-propiedades">
+                                    <img src="../img/Propiedades/Venta/depto.avcazon1000webp.webp" class="propiedades" alt="La imagen muestra un Departamento en Tigre. Para más info puede pulsar el botón de abajo que lo redirigirá a nuestra página de Zonaprop">
+                                    <div class="overlay"> 
+                                        <div class="content">
+                                            2amb | 44m2 
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="card-body">
                                     <h5 class="card-title">Tigre</h5>
-                                    <h6 class="card-title text-light"> Av Cazón 1000 </h6>
-                                    <p class="card-text">U$D 120.000</p>
-                                    <a href="https://www.zonaprop.com.ar/propiedades/excelente-casa-6-amb-florida-vte-lopez-49484327.html" target="_blank" class="btn btn-primary">Más info.</a>
+                                    <p> Av Cazón 1000 </p>
+                                    <p>U$D 120.000</p>
+                                    <a href="https://www.zonaprop.com.ar/propiedades/a-estrenar-amplio-monoambiente-y-2-amb-en-tigre-44613032.html" target="_blank" class="btn btn-primary">Más info.</a>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-sm-6 col-lg-4">
+                        <!-- Card nº15-->
+                        <div class="mt-4 col-sm-6 col-lg-4">
                             <div class="card">
-                                <div class="card-propiedades">
-                                    <img src="../img/Propiedades/Venta/local.libertador800.webp" class="propiedades card-img-top" alt="La imagen muestra un local en San Fernando sobre avenida del Libertador. Para más info puede pulsar el botón de abajo que lo redirigirá a nuestra página de Zonaprop">
+                                <div class="wrapper card-propiedades">
+                                    <img src="../img/Propiedades/Alquiler/alq.local.sucre.jpg" class="propiedades" alt="La imagen muestra un local pequeño en alquiler en San Isidro. Para más info puede pulsar el botón de abajo que lo redirigirá a nuestra página de Zonaprop">
+                                    <div class="overlay"> 
+                                        <div class="content">
+                                            1amb | 20m2 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">San Isidro</h5>
+                                    <p> Sucre 500 </p>
+                                    <p>$40.000</p>
+                                    <a href="https://www.zonaprop.com.ar/propiedades/panamericana-av-sucre-500-con-estacionamiento-50036096.html" target="_blank" class="btn btn-primary">Más info.</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card n°16-->
+                        <div class="col-sm-6 col-lg-4 mt-4">
+                            <div class="card">
+                                <div class="wrapper card-propiedades">
+                                    <img src="../img/Propiedades/Venta/local.libertador800.webp" class="propiedades" alt="La imagen muestra un local en San Fernando sobre avenida del Libertador. Para más info puede pulsar el botón de abajo que lo redirigirá a nuestra página de Zonaprop">
+                                    <div class="overlay"> 
+                                        <div class="content">
+                                            2amb | 30m2 
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="card-body">
                                     <h5 class="card-title">San Fernando</h5>
-                                    <h6 class="card-title text-light"> Av del Libertador 800 </h6>
-                                    <p class="card-text">U$D 60.000</p>
-                                    <a href="https://www.zonaprop.com.ar/propiedades/excelente-casa-6-amb-florida-vte-lopez-49484327.html" target="_blank" class="btn btn-primary">Más info.</a>
+                                    <p> Av del Libertador 800 </p>
+                                    <p>U$D 60.500</p>
+                                    <a href="https://www.zonaprop.com.ar/propiedades/ph-san-fernando-30-m-sup2-48044905.html" target="_blank" class="btn btn-primary">Más info.</a>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-sm-6 col-lg-4">
+                         <!-- Card nº17-->
+                         <div class="mt-4 col-sm-6 col-lg-4">
                             <div class="card">
-                                <div class="card-propiedades">
-                                    <img src="../img/Propiedades/Alquiler/galpon.avdeldirectorio5900.jpg" class="propiedades card-img-top" alt="La imagen muestra un galpón en alquiler sobre Av del Directorio. Para más info puede pulsar el botón de abajo que lo redirigirá a nuestra página de Zonaprop">
+                                <div class="wrapper card-propiedades">
+                                    <img src="../img/Propiedades/Alquiler/alq.local.piedrabuena.jpg" class="propiedades" alt="La imagen muestra un local pequeño en alquiler en Olivos, cerca de Unicenter. Para más info puede pulsar el botón de abajo que lo redirigirá a nuestra página de Zonaprop">
+                                    <div class="overlay"> 
+                                        <div class="content">
+                                            1amb | 35m2 
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="card-body">
-                                    <h5 class="card-title">Galpón</h5>
-                                    <h6 class="card-title text-light"> Av del Directorio 5900</h6>
-                                    <p class="card-text">U$D 6.500</p>
-                                    <a href="https://www.zonaprop.com.ar/propiedades/excelente-casa-6-amb-florida-vte-lopez-49484327.html" target="_blank" class="btn btn-primary">Más info.</a>
+                                    <h5 class="card-title">Olivos</h5>
+                                    <p>Piedrabuena 3502</p> 
+                                    <p>$35.000</p>
+                                    <a href="https://www.zonaprop.com.ar/propiedades/local-z-unicenter-49056953.html" target="_blank" class="btn btn-primary">Más info.</a>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-sm-6 col-lg-4">
+                        <!-- Card n°18-->
+                        <div class="col-sm-6 col-lg-4 mt-4">
                             <div class="card">
-                                <div class="card-propiedades">
-                                    <img src="../img/Propiedades/Venta/casa.santaclara.gz.jpg" class="propiedades card-img-top" alt="La imagen muestra una casa a la venta dentro del barrio cerrado Santa Clara. Para más info puede pulsar el botón de abajo que lo redirigirá a nuestra página de Zonaprop">
-                                </div>
-                                <div class="card-body">
-                                    <h5 class="card-title">Victoria</h5>
-                                    <h6 class="card-title text-light"> Barrio Cerrado "Santa Clara"</h6>
-                                    <p class="card-text">U$D 490.000</p>
-                                    <a href="https://www.zonaprop.com.ar/propiedades/excelente-casa-6-amb-florida-vte-lopez-49484327.html" target="_blank" class="btn btn-primary">Más info.</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-6 col-lg-4">
-                            <div class="card">
-                                <div class="card-propiedades">
-                                    <img src="../img/Propiedades/Venta/casa.santaclara.pia.webp" class="propiedades card-img-top" alt="La imagen muestra una casa a la venta dentro del barrio cerrado Santa Clara. Para más info puede pulsar el botón de abajo que lo redirigirá a nuestra página de Zonaprop">
+                                <div class="wrapper card-propiedades">
+                                    <img src="../img/Propiedades/Venta/casa.santaclara.gz.jpg" class="propiedades" alt="La imagen muestra una casa a la venta dentro del barrio cerrado Santa Clara. Para más info puede pulsar el botón de abajo que lo redirigirá a nuestra página de Zonaprop">
+                                    <div class="overlay"> 
+                                        <div class="content">
+                                            5amb | 400m2 
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="card-body">
                                     <h5 class="card-title">Victoria</h5>
-                                    <h6 class="card-title text-light"> Barrio Cerrado "Santa Clara"</h6>
+                                    <p> Santa Clara"</p>
+                                    <p>U$D 490.000</p>
+                                    <a href="https://www.zonaprop.com.ar/propiedades/muy-linda!-b.-cerr-santa-clara-45723355.html" target="_blank" class="btn btn-primary">Más info.</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card n°19-->
+                        <div class="col-sm-6 col-lg-4 mt-4">
+                            <div class="card">
+                                <div class="wrapper card-propiedades">
+                                    <img src="../img/Propiedades/Venta/casa.santaclara.pia.webp" class="propiedades" alt="La imagen muestra una casa a la venta dentro del barrio cerrado Santa Clara. Para más info puede pulsar el botón de abajo que lo redirigirá a nuestra página de Zonaprop">
+                                    <div class="overlay"> 
+                                        <div class="content">
+                                            5amb | 500m2 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Victoria</h5>
+                                    <p>Santa Clara</p>
                                     <p class="card-text">U$D 480.000</p>
-                                    <a href="https://www.zonaprop.com.ar/propiedades/excelente-casa-6-amb-florida-vte-lopez-49484327.html" target="_blank" class="btn btn-primary">Más info.</a>
+                                    <a href="https://www.zonaprop.com.ar/propiedades/excelente-reciclada-b-cerr-santa-clara-lomas-43905656.html" target="_blank" class="btn btn-primary">Más info.</a>
                                 </div>
                             </div>
                         </div>
+
                     </div>
                     <!-- termina cards--> 
                 </main>
