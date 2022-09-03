@@ -74,6 +74,19 @@
                     font-size: 1.4em; 
                 }
             }
+            //Sub-section nº3
+            .error-texto {
+                text-align: center;
+                @include lg {
+                    font-size: 0.9em;
+                }
+                @include xl{
+                    font-size: 1em;
+                }
+                @include xxl{
+                    font-size: 1.1em; 
+                }
+            }
         }
         //Segunda Section 
         .container-error-img {
