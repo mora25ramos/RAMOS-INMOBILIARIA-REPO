@@ -8,7 +8,7 @@
     
     //Container de todo
     .container-error {
-        margin: 50px;
+        margin: 40px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
 
         @include xl{
@@ -35,10 +35,10 @@
             margin: 40px;
             grid-area: texto;
             @include lg {
-                margin: 120px 80px;
+                margin: 100px 80px;
             }
             @include xxl {
-                margin: 120px 0px;
+                margin: 105px 0px;
             }
             
             //Sub-section nº1
@@ -64,13 +64,13 @@
             //Sub-section nº2
             .error-subtitulo {
                 @include lg {
-                    font-size: 1.1em;
+                    font-size: 1em;
                 }
                 @include xl{
-                    font-size: 1.2em;
+                    font-size: 1.1em;
                 }
                 @include xxl{
-                    font-size: 1.3em; 
+                    font-size: 1.2em; 
                 }
             }
             //Sub-section nº3
