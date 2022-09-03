@@ -63,20 +63,18 @@
             }
             //Sub-section nº2
             .error-subtitulo {
-                text-align: center;
                 @include lg {
-                    font-size: 1.2em;
+                    font-size: 1.1em;
                 }
                 @include xl{
-                    font-size: 1.3em;
+                    font-size: 1.2em;
                 }
                 @include xxl{
-                    font-size: 1.4em; 
+                    font-size: 1.3em; 
                 }
             }
             //Sub-section nº3
             .error-texto {
-                text-align: center;
                 @include lg {
                     font-size: 0.9em;
                 }
